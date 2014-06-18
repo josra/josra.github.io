@@ -1,5 +1,5 @@
-name: CoDe:U
-pygments: true
+name: JOSRA
+highlighter: pygments
 exclude: [README.md]
 timezone: Europe/Copenhagen
-url: www.codeu.eu
+url: www.josra.org
