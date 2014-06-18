@@ -1,0 +1,5 @@
+name: CoDe:U
+pygments: true
+exclude: [README.md]
+timezone: Europe/Copenhagen
+url: www.codeu.eu
