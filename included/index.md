@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Josra what's included?
 ---
 #Josra - benefits

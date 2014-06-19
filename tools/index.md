@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Josra Front
+layout: post
+title: Josra Tool stack
 ---
 #The JOSRA tool stack
 
