@@ -11,7 +11,8 @@ As an alliance member you get:
 * Praqma's leadership, coordination and facilitation of the JOSRA alliance activities and initiatives.
 * Ongoing maintenance of the tools in the JOSRA tool stack.
 * Access to a yearly 1-day JOSRA alliance meet-up/hackaton where the roadmaps in the JOSRA tools stack are discussed for one year ahead.
-* In collaboration with the University of Copenhagen and Copenhagen Business School, Praqma is constantly hosting and tutoring internships for master, bachelor and PA students within computer science. All internship projects will be directed towards generating some kind of benefit to the tools selected by JOSRA either by features, fixes or completely new ideas.
+* The interships that Praqma is hosting and tutoring for master, bachelor and PA students within computer science are all directed towards generating some kind of benefit to the tools selected by JOSRA either by features, fixes or completely new ideas.
+* Join the yearly JOSRA meet-up, send two participants. 
 
 ## Yearly meet-up
 
