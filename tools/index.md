@@ -13,7 +13,7 @@ Currently the tools in the JOSRA tool stack all have some kind of relation to Co
 * __ClearCase UCM plugin__ for Jenkins CI (Grundfos, Jaguar Land Rover, Novo Nordisk, Syntigo)
 * __Pretested integration plugin__ for Jenkins CI (Atmel)
 * __Config Rotator plugin__ for Jenkins CI (Grundfos)
-* __MemoryMap plugin_ for Jenkins (Yxlon, MAN Diesel & Turbo)
+* __MemoryMap plugin__ for Jenkins (Yxlon, MAN Diesel & Turbo)
 * __Logging plugin__ for Jenkins CI (Praqma)
 * __PRQA plugin__ for Jenkins CI (Programming Research)
 * __Accelerated ClearCase__ - a set of generic perl triggers (Novo Nordisk, Grundfos, ATP, Siemens)
