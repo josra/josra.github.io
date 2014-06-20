@@ -40,6 +40,6 @@ The [annual membership fee](/offer) - will give you a pile of [benefits and supp
 
 * Web: [www.josra.org](http://www.josra.org)
 * Roadmaps in Trello: [Http://www.trello.com/josra](www.trello.com/josra)
-* Group on LinkedIn:  ["Joint Open Source Roadmap  Alliance"](https://www.linkedin.com/groups/Joint-Open-Source-Roadmap-Alliance-7403229)
+* Group on LinkedIn:  ["Joint Open Source Roadmap Alliance"](https://www.linkedin.com/groups/Joint-Open-Source-Roadmap-Alliance-7403229)
  
 If you are interested in joining JOSRA or if you have any questions, please contact **Lars Kruse** ([lak@praqma.com](mailto:lak@praqma.com) / +45 2087 2530)
