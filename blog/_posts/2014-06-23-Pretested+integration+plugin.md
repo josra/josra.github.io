@@ -43,7 +43,7 @@ On the other hand; if the integration is not successful and you get a failed bui
 
 You are welcome to fix the issue on the same branch and push it again - the plugin fully supports that.
 
-###Al work is delivered in one chunk
+###All work is delivered in one chunk
 It's genrally considered good practice, that developers squash their commits into match a delivery of a task or a story. If a developer has solved a bug and the solution is scattered across several commits on his branch, If these commits aren't accumulated one way or the other, then the solution can be more difficult to review simply because it's not packaged and nicely wrapped up.
 
 The Pretested Integration plugin does this for you, simply by only allowing fast-forward merges in the situation where the contribution is actually contained in just one single commit.
