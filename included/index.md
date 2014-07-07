@@ -6,7 +6,7 @@ title: Josra what's included?
 
 As an alliance member you get:
 
-* Support or development cases served by Open Source experts at Praqma - the first two hours spent on every case are included in the membership (limited to 20 cases per year).
+* 40 hours of support or development cases served by Open Source experts at Praqma - only requirement is that the work is contributing to the tools in JOSRA's tools stack..
 * Praqma's leadership and project management on the development of new features and fixes.
 * Praqma's leadership, coordination and facilitation of the JOSRA alliance activities and initiatives.
 * Ongoing maintenance of the tools in the JOSRA tool stack.
