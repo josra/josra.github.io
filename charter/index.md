@@ -171,6 +171,16 @@ E.g for Jenkins CI that system is [issues.jenkins-ci.org](issues.jenkins-ci.org)
 
 If no naturally designated case management system exist for a given case. Praqma's incident management system will be used - cases can be opened simply by mailing them to [support@praqma.net](support@praqma.net).
 
+## Josra related internships
+
+Through engagement with DIKU and Copenhagen Business School Praqma hosts Computer Science interns from both Master, Bachelor and AP courses. 
+
+We’ve currently hosted more than 2o interns and we’re constantly defining and offering challenging internships for students at the educational institutions that we’re collaborating with. We’re engaging interns in Open Source related assignments and challenges. These internship programs can potentially span hundreds of effective work hours by talented computer scientists and craftsmen in-spe.
+
+As part of the Josra alliance members are encouraged to collaborate with Praqma to define new assignments for these talented interns. Praqma offers to host the internships and offer guidance, mentorship and education in an master/apprentice like relation, while JOSRA alliance members are encouraged to participate in the role as “product owner” for a specific challenge.
+
+Significant contributions to Open Source technologies has been made through these Praqma internships over time.
+
 ## Intellectual Property, Copy rights and Open Source license
 
 All code produced in scope of Josra is to become Open Source.
