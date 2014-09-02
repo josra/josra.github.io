@@ -37,9 +37,7 @@ Membership of the alliance is essentially defined by a _Josra membership contrac
 
 ### Members
 
-Members will be listed here as they sign up. 
-
-At this point we have a group of prospects. 
+Members will be listed here as they sign up. At this point we have a group of prospects. 
 
 We refer to this group as _The founding Innovators_. It's defined by the group of companies who participated in reviewing the initial versions of the charter and the membership contact.
 
