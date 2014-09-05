@@ -3,3 +3,5 @@ highlighter: pygments
 exclude: [README.md]
 timezone: Europe/Copenhagen
 url: www.josra.org
+markdown: kramdown
+

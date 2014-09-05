@@ -41,7 +41,7 @@ Members will be listed here as they sign up. At this point we have a group of pr
 
 We refer to this group as _The founding Innovators_. It's defined by the group of companies who participated in reviewing the initial versions of the charter and the membership contact.
 
-Members er listed chronically by their proclaimed intention to sign:
+Members are listed chronically by their proclaimed intention to sign:
 
 * [Yxlon International](http://www.yxlon.com){: target="_blank"}
 * [Grundfos](http://www.grundfos.dk){: target="_blank"}
@@ -82,7 +82,7 @@ If an alliance member is ambitious and wish to add more funding to development t
 
 This additional funding can be spent on the Josra alliance initiatives under the exact same conditions as the basic 40 hours
 
-## Processes{: #processes }
+## Processes 
 
 A typical process for engagement during the annual meetups could look like this:
 
