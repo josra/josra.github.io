@@ -100,7 +100,7 @@ The Josra tool stack includes all tools, technologies and extensions developed u
 
 The basis of the collaboration is initially the tool stack that _The Founding Innovators_ has been working on for quite some while together with Praqma - essentially that is made up of 8-10 plugin for Jenkins with a accumulated user base counting hundreds of installations (2000+ as of September 2014).
 
-### How he tool stack expands
+### How the tool stack expands
 The scope of the Josra tool stack is theoretically anything Open Source.
 
 If an alliance member, either alone or as part of a _stakeholder group_, chooses to fund a development case that leads to a release, then that particular tool and the delivery will be maintained within the scope of Josra for a period of at least 12 months. And the tool will effectively be regarded as included in the Josra tool stack.
