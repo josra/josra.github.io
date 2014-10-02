@@ -59,11 +59,19 @@ body {
 }
 
 a {
-  color: #569d1b;
+  color: #00adef;
+  
+  -moz-transition: color 0.5s ease;
+  -moz-transition: text-shadow 0.5s ease;
+  -o-transition: color 0.5s ease;
+  -o-transition: text-shadow 0.5s ease;
+  -ms-transition: color 0.5s ease;
+  -ms-transition: text-shadow 0.5s ease;
 }
 
 a:hover {
-  color: #2268b2;
+  color: #0069ba;
+  text-shadow: #0090ff 0px 0px 2px;
 }
 
 header {
@@ -347,7 +355,7 @@ a {
 }
 
 .stdright, .stdleft, .stdcenter {
-   width:300px;
+   width:450px;
    padding-top:    5px;
    padding-left:   5px;
    padding-right:  5px;
@@ -366,6 +374,7 @@ a {
 }
 
 .stdcenter {
+   display: block;
    margin-left:  auto;
    margin-right: auto;
    margin-bottom: 20px;
@@ -377,10 +386,10 @@ p a {
 }
 
 blockquote {
-  font-size: 1.6em;
   border-left: 10px solid #e9e9e9;
   margin-bottom: 20px;
   padding: 0 0 0 30px;
+  font-style:italic;
 }
 
 ul li {

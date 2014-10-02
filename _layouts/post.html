@@ -11,11 +11,22 @@
       <div class="inner clearfix">
         <section id="main-content">
         
+          <strong>By:&nbsp;</strong>{% for author in page.author %}
+            <em>{{author}}</em>&nbsp;&nbsp;
+          {% endfor %}<br/>
+          <strong> On:</strong>          
+          {{page.date | date: "%A, %B %d. %Y"}}<br/>
+        
+          <h1>{{page.title}}</h1>
+        
           {{ content }}
+          
         
         </section>
 
         {%include lsposts-sidebar.html%}
+
+        {%include google-comments.html%}
         
       </div>
     </div>
