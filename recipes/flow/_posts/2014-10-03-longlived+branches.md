@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Long-lived development branches
+author: Lars Kruse
 ---
 
 This recipe explains how you can reuse a development branch after you have delivered and integrated it using the squashed strategy. The issue here is that the squashed commit on the integration branch is detached from your development branch, so Git doesn't know that 

@@ -2,7 +2,7 @@
 layout: post
 title: GiJeLi setup
 tags: [Gijeli, Wiki, MarkDown, Ruby]
-authors: [Lars kruse]
+author: Lars Kruse
 ---
 
 __Jekyll is a Ruby gem that renders [MarkDown](https://help.github.com/articles/github-flavored-markdown) and [Liquid](http://docs.shopify.com/themes/liquid-basics) to static html pages. Jekyll is the stand-alone engine that drives GitHub pages. By installing Jekyll you can effectively have an equivalent to GitHub pages anywhere.__
