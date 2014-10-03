@@ -1,8 +1,7 @@
 ---
 layout: default
-title: Offer
+title: Josra membership fee
 ---
-# Josra membership fee
 
 <div class="stdcenter"><img src="/images/josra-fee.png"/></div>
 

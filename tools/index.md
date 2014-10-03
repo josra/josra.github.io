@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Josra Tool stack
+author: Lars Kruse
 ---
-#The JOSRA tool stack
+
 
 Continuous Delivery (CoDe) and DevOps as the uniting factors. Continuous Delivery is like a credo for us - DevOps runs in our veins.
 

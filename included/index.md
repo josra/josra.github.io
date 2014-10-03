@@ -3,7 +3,6 @@ layout: default
 title: Josra what's included?
 author: Lars Kruse
 ---
-#Josra - benefits
 
 As an alliance member you get:
 

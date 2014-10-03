@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Josra charter
+author: Lars Kruse
 ---
-#Josra - Charter
 
 ## Name
 

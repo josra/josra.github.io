@@ -1,8 +1,8 @@
 ---
 layout: default
 title: JOSRA blog
+author: Lars Kruse
 ---
-# Josra blog
 
 Interesting stuff in the context of Josra. 
 
