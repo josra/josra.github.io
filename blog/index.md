@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: JOSRA blog
 ---
 # Josra blog

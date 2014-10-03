@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: front
 title: Josra Front
 ---
 #Joint Open Source Roadmap Alliance

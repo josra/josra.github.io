@@ -1,0 +1,8 @@
+- name: Blogs
+  description: Articles, news, posting, ideas etc
+  dir: blog
+  
+- name: CoDe:U Git Flow Cookbook
+  description: A collection of recepies on how to do common stuff, working with the CoDe:U Git Flow
+  dir: flow
+

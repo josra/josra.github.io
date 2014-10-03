@@ -11,6 +11,14 @@
       <div class="inner clearfix">
         <section id="main-content">
         
+          <strong>Category</strong> 
+            {% for catname in site.data.catnames %}
+              {% for category in page.categories %}
+                {% if catname.dir == category %}
+                  <em><span title="{{catname.description}}">{{catname.name}}</span></em>&nbsp;&nbsp;
+                 {% endif %}
+              {% endfor %}
+            {% endfor %}<br/>
           <strong>By:&nbsp;</strong>{% for author in page.author %}
             <em>{{author}}</em>&nbsp;&nbsp;
           {% endfor %}<br/>
@@ -23,9 +31,10 @@
           
         
         </section>
-
-        {%include lsposts-sidebar.html%}
-
+          <aside id="sidebar">
+            {%include lsbycat.html%}
+          </aside>
+  
         {%include google-comments.html%}
         
       </div>

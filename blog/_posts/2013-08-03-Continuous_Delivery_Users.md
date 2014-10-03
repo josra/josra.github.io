@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  Continuous Delivery Users
+author: Lars Kruse
 ---
-## Continuous Delivery Users
 
 CoDe:U  is a professionally driven user group. It's an alliance for people within the software industry who are interested or engaged in the principles of Continuous Delivery and who wants to share their experiences, worries, challenges and successes and to learn from each other.
 

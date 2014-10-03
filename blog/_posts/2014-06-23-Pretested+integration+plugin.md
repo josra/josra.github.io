@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  Pretested Integration Plugin 
+author: Lars Kruse
 ---
-## Pretested Integration Plugin for Jenkins CI
 
 The blog post is a comprehensive description and guide in the Pretested Integration Plugin. It's a supplement to the plugin's [wiki page at Jenkins CI](https://wiki.jenkins-ci.org/display/JENKINS/Pretested+Integration+Plugin).
 
