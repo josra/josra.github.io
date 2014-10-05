@@ -22,7 +22,7 @@ The flow is designed to be easy to communicate and teach, so we've made a handfu
 
 The approach we use is _branchy_.
 
-By _branchy_ we mean that the underlying meta data that drives the model and describes the state and transitions is based purely on branches. This is done because Git is distributed and therfore relies on _clones_ for synchronizing and a clone is - exactly as the word describes; a _clone_ - a copy of something else. 
+By _branchy_ we mean that the underlying meta data that drives the model and describes the state and transitions is based purely on branches. This is done because Git is distributed and therefore relies on _clones_ for synchronizing and a clone is - exactly as the word describes; a _clone_ - a copy of something else. 
 
 Some technologies use different clones within the same repository to define different states or promotions. We believe that this approach defies the purpose of a clone entirely. Consequently we also believe that the states, promotions and transitions must be defined by metadate that can freely be synchronized between clones as branches.
 
@@ -34,7 +34,7 @@ But more importantly we come from a background with very strong branching models
 
 ## Look Ma'! No Hands!
 
-The flow that we advocate is sometimes is referred to as _late branching_ another term frequently used is _release train_, these concepts assumes that merging branches implicitly means some kind of promotion. In general, the target branch is supposed to have a higher quality stamp, than the source branch. Such a transition calls for a kind of formal verification procedure.
+The flow that we advocate is sometimes referred to as _late branching_ another term frequently used is _release train_, these concepts assumes that merging branches implicitly means some kind of promotion. In general, the target branch is supposed to have a higher quality stamp, than the source branch. Such a transition calls for a kind of formal verification procedure.
 
 It's a flow that is well know from the _benevolent dictator governance model_ that often rule in Open Source communities:
 
@@ -42,7 +42,7 @@ It's a flow that is well know from the _benevolent dictator governance model_ th
 
 We believe that this flow is good; that merges are _deliveries_ and they need to be verified. On the other hand we think that any verification process ought to be automated, so we have replaced the benevolent dictator with a willing serf: Jenkins CI.
 
-Our flow is automated by the [Pretested Integration Plugin][pretested-integration-plugin]. You're jus supposed to implement your definition of _done_ whether that might be an integration or a promotion, and Jenkins will execute it for you.
+Our flow is automated by the [Pretested Integration Plugin][pretested-integration-plugin]. You're just supposed to implement your definition of _done_ whether that might be an integration or a promotion, and Jenkins will execute it for you.
 
 ## The 10 Git Commitments
 
@@ -101,7 +101,7 @@ Having a component oriented system architecture and organizing work efforts arou
 
 The `master` branch has special meaning in Git. It's the default integration branch, and it's the only branch that exist after you're run a `git init`.
 
-You can change what appears to be the default branch to something different than `master` using [`git-symbolic-ref`](https://www.kernel.org/pub/software/scm/git/docs/git-symbolic-ref.html) but it inconsistent across clones so why go against the convention?
+You can change what appears to be the default branch to something different than `master` using [`git-symbolic-ref`](https://www.kernel.org/pub/software/scm/git/docs/git-symbolic-ref.html) but it isn't consistent across clones so why go against the convention?
 
 This commitment is also a raised finger against the practice described in @nvie's Git-flow, where he describes two ever-lasting [main branches](http://nvie.com/posts/a-successful-git-branching-model/#the-main-branches): `master` and `develop`. 
 
@@ -115,7 +115,7 @@ This commitment guarantees that any merge conflict that ever occurs, in the enti
 
 Developers will have to, either organize themselves around roles where they do not fight over the same files, or they will have to stay in sync with what's happening on `master`, either through merges or rebases.
 
-This means that integrations can be automated, since they do not require human intervention. So this is one of the core features that we poured into the [Pretested Integration Plugin][pretested-integration-plugin]
+This means that integrations can be automated, since they do not require human intervention. So this is one of the core features that we implemented in [Pretested Integration Plugin][pretested-integration-plugin]
 
 #### All integrations onto an integration branch must pass an automated toll-gate
 
@@ -135,7 +135,7 @@ But first a recap on the four phases of a Jenkins job:
 * Build phase
 * Post-build phase
 
-The poll phase is rare and special. Rare because SCM plugins are the only ones that have access to a poll phase and special because in the poll phase the job is actually not instantiated yet - It's like a class method. The purpose of the poll phase is to determine if a new job should indeed be instantiated or not.
+The poll phase is rare and special. Rare because SCM plugins are the only ones that have access to a poll phase and special because in the poll phase the job is actually not instantiated yet - It's like a class method. The purpose of the poll phase is to determine if a new job should be put in the Jenkins job queue.
 
 The standard [Git plugin][git-plugin] spans the poll phase - if you're using polling -  and the pre-build phase. It uses the pre-build phase to establish the workspace on the branch-specifier you've setup, or the one that is passes as parameter.
 
@@ -143,9 +143,9 @@ In our example of how the branch specifier is setup in the Git plugin we have us
 
 ![Git plugin branch specifier](/images/blog/git-branch-specifier.png){: .stdcenter}
 
-So in other word, naming your branch so that it matches our agreed keyword triggers an attempt to integrate it. If you want to push something to `origin`, not necessarily to raise a flag for integration, but maybe to share the branch with a colleague - simply name it something different and the integration won't be triggered.
+So in other words, naming your branch so that it matches our agreed keyword triggers an attempt to integrate it. If you want to push something to `origin`, not necessarily to raise a flag for integration, but maybe to share the branch with a colleague - simply name it something different and the integration won't be triggered.
 
-The [Pretested Integration Plugin][pretested-integration-plugin] is a build wrapper. It has a footprint in both the pre-build phase and the post-build phase. It takes over immediately after the standard Git plugin is done establishing the workspace, but before the actual build phase kicks off, in other words, while we're stil in the pre-build phase of the job.
+The [Pretested Integration Plugin][pretested-integration-plugin] uses a _build wrapper_ and a _publisher_. It means that it has a footprint in both the pre-build phase and the post-build phase. It takes over immediately after the standard Git plugin has finished establishing the workspace, but before the actual build phase kicks off, in other words, while we're stil in the pre-build phase of the job.
 
 We're using the standard [Git plugin][git-plugin] to trigger the build, but we're not really interested in the workspace we get, where the branch matching the branch specifier is checked out. See, that's our source, not our target.
 
@@ -235,7 +235,7 @@ A pipeline is the line of related job executions, which all together verifies th
 
 Typically pipelines are implemented as jobs that succeed each other and it only the first _toll-gate_ job is actually triggered by something happening in your version control system. The following jobs are started by the previous job but only if it actually succeed.
 
-So it's s chain of events that which stops if you're not done. And if it completes succesfully then you know you're done. 
+So it's s chain of events that stops if you're not done. And if it completes succesfully then you know you're done. 
 
 Drawn as a state-transition diagram it may look like this:
 
@@ -243,7 +243,7 @@ Drawn as a state-transition diagram it may look like this:
 
 This picture is an abstract, in reality each action or station in the pipeline may well comprise several jobs of which only the accumulated successful result will trigger the next step. You decide, it's your pipeline.
 
-This commitment simply states that given that every bit of code belongs to _something_ and _everything_ needs to be verified to some extend, then every commit should kick off a pipeline in order to be verified.
+This commitment simply states that given that every bit of code belongs to _something_ and _everything_ needs to be verified to some extent, then every commit should kick off a pipeline in order to be verified.
 
 You may argue that the pipeline may become so fat and exhausting to execute that this can't be true.
 
@@ -294,7 +294,7 @@ _Note: We've released another free, open source plugin for Jenkins CI that can r
 
 ![Development branches](/images/blog/development-branches.png){: .stdright style="width:160px;"}
 
-This commitment refers back to the previous discussion about benevolent dictators and their trusted lieutenants who rigidly guard the sacred core now simply being replaced by a willing serf that does everything automatically when you raise a flag.
+This commitment refers to the previous discussion about benevolent dictators and their trusted lieutenants who rigidly guard the sacred core now simply being replaced by a willing serf that does everything automatically when you raise a flag.
 
 This commitment defines the flag.
 
