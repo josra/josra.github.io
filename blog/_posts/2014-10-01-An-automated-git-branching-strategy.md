@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  An automated Git Branching Flow
+title:  An Automated Git Branching Flow
 author: Lars Kruse
 ---
 
