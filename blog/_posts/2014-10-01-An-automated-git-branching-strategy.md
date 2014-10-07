@@ -6,7 +6,7 @@ author: Lars Kruse
 
 **The fact that most prehistoric version control systems weren't particularly good at branching and especially not at merging leads to the consequence, that many teams today find themselves in a situation where they have never before merged as intensely as they now do on Git.**
 
-_...A branching strategy is definitely required - but which one?_
+_...A branching strategy is definitely required - **but which one?**_
 
 This flow describes a branching strategy in Git, which is specifically designed to be easy both to automate and to roll out event in large organizations. The flow uses a _branchy_ approach and is not dependent on any particular repository server. It's compliant with all that we've come across; GitHub, GitLab, Stash, Gerrit etc. It is automated purely by using  [Jenkins CI](www.jenkins-ci.org "Our favorite automation platform") and two plugins: The standard [Git  plugin][git-plugin] and the [Pretested Integration Plugin][pretested-integration-plugin].
 
