@@ -10,7 +10,7 @@ it's safe to continue working on your development branch and deliver again. It w
  
 ### Getting ready
 
-This setup mimics what the Pretested Integration Pluging does when squashing integrations.
+This setup mimics what the Pretested Integration Plugin does when squashing integrations.
 
 You can take the code below and run it directly into your shell.
 
@@ -65,7 +65,7 @@ If you continue working on `my-dev` and then deliver again - Git will get mad at
     git branch -D ready/my-dev
 
 
-The reason is that git will squash `my-dev` up to last common ancestor and that means that your trying to deliver your two already-delivered commits again.
+The reason is that git will squash `my-dev` up to last common ancestor and that means that you are trying to deliver your two already-delivered commits again.
 
 ### How to do it
 
@@ -92,7 +92,7 @@ Then the following commands will also allow you to reuse the `my-dev` branch and
 
 ### Watch out
 
-Please note, that even if you might be fond of using `rebase` rather than a plain `merge` or `pull` it would very wrong to do in this situation.
+Please note, that even if you might be fond of using `rebase` rather than a plain `merge` or `pull` it would be very wrong to do in this situation.
 
 First of all because `rebase` rewrites your history and you already made a delivery. But also simply because running the rebase would fail.
 
