@@ -4,7 +4,7 @@ title: Josra what's included?
 author: Lars Kruse
 ---
 
-As an alliance member you get:
+__As an alliance member you get:__
 
 * 40 hours of support or development cases served by Open Source experts at Praqma - only requirement is that the work is contributing to the tools in JOSRA's tools stack..
 * Praqma's leadership and project management on the development of new features and fixes.
