@@ -4,7 +4,7 @@ title: Josra 1st gathering
 author: Lars Kruse
 ---
 
-_Oslo March 2015<br/>
+_Oslo, April 30th 2015<br/>
 in<br/>
 conjunction with the<br/>
 Continuous Delivery and DevOps Conference_{: .subtitle}
