@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+  {%include head.html%}
+
+  <body>
+
+    {%include banner.html%}
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+
+
+          <div class="title">{{page.title}}</div>
+
+          {{ content }}
+
+
+        </section>
+          <aside id="sidebar">
+            {%include lsbycat.html%}
+          </aside>
+
+
+      </div>
+    </div>
+  </body>
+</html>

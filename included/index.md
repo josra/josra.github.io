@@ -3,6 +3,15 @@ layout: default
 title: Josra what's included?
 author: Lars Kruse
 ---
+<div class="stdcenter"><img src="/images/josra-fee.png"/></div>
+
+The membership fee per corporation is initially set to __7,000 EUR__ per year.
+
+As listed in the [included](/included/) section, the membership - among other benefits - entitles you to up to 40 hours of support or development per year - only requirement is that the work is contributing to the tools in JOSRA's tools stack.
+
+###Early adaptors are rewarded!
+
+_The 7K€/Y:) is a discounted rate that we will guarantee the first 20 members who join the alliance._
 
 __As an alliance member you get:__
 
@@ -12,7 +21,7 @@ __As an alliance member you get:__
 * Ongoing maintenance of the tools in the JOSRA tool stack.
 * Access to a yearly 1-day JOSRA alliance meet-up/hackaton where the roadmaps in the JOSRA tools stack are discussed for one year ahead.
 * The interships that Praqma is hosting and tutoring for master, bachelor and PA students within computer science are all directed towards generating some kind of benefit to the tools selected by JOSRA either by features, fixes or completely new ideas.
-* Join the yearly JOSRA meet-up, send two participants. 
+* Join the yearly JOSRA meet-up, send two participants.
 
 ## Yearly meet-up
 
