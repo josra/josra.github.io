@@ -6,7 +6,7 @@ author: Lars Kruse
 
 _Oslo March 2015<br/>
 in<br/>
-conjunctions with the<br/>
+conjunction with the<br/>
 Continuous Delivery and DevOps Conference_{: .subtitle}
 
 __Teknologihuset conference center<br/>
@@ -56,7 +56,7 @@ The gathering will take the form of a combined unconference and workshop and inc
     <start>9:45</start>
     <point>
       <strong>Two lightning talks</strong><br/>
-      Short ~10 minute presentations os the BoF topics
+      Short ~10 minute presentations of the BoF topics
     </point>
   </timeslot>
 
@@ -169,7 +169,7 @@ The gathering will take the form of a combined unconference and workshop and inc
 
 __Breaks:__
 
-_Breaks are not shown in agenda: We have planned for 1:15 min lunch and 10 mins break per full hour. We'll distribute them as need through out the day._
+_Breaks are not shown in agenda: We have planned for 1:15 hour lunch and 10 mins break per full hour. We'll distribute them as needed throughout the day._
 
 
 <div style="width:100%; text-align:left;" ><iframe  src="//eventbrite.com/tickets-external?eid=16326701604&ref=etckt" frameborder="0" height="214" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com/r/etckt">Online event registration</a><span style="color:#ddd;"> for </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="https://www.eventbrite.com/e/josra-1st-gathering-oslo-march-2015-tickets-16326701604?ref=etckt">Josra 1st gathering - Oslo, March 2015</a> <span style="color:#ddd;">powered by</span> <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com?ref=etckt">Eventbrite</a></div></div>
