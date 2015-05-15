@@ -58,7 +58,7 @@ You should avoid merging by the way you organize your development team - not by 
 
 I think I know where you're coming from. It's the doctrine that feature branches are inherently evil because they prevent Continuous Integration. But feature branches are being taking hostage here - it's not the feature branches that are evil - it's the fact that you are not integrating continuously that constitutes the real problem.
 
-We call the branches where developers make their cahnges "development branches" - and they are exemplified by feature branches, maintenance branches, team branches, bug-fix branches ...or what ever you want to call them. We don't differ - it's not important. To us they are all just branches and they are all integrated automatically.
+We call the branches where developers make their changes "development branches" - and they are exemplified by feature branches, maintenance branches, team branches, bug-fix branches ...or what ever you want to call them. We don't differ - it's not important. To us they are all just branches and they are all integrated automatically.
 
 I'm all in favor for what you call _trunk based_ if the interpretation is that _there can only be one long-lived branch_. This is exactly the foundation of our initial criticism of the _[successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/)_; It has two long-lived branches. and for that reason alone the integration process can not be automated.
 
@@ -143,7 +143,7 @@ We're using it simply to create transparency and to implement the project's [def
 
 Whether you prevent a bad merge from happening by testing it first - or whether you allow it to happen unconditionally and then revert it if the test fails ought to be indifferent. Both scenarios will lead to the same end result. Why be religious about it?
 
-![Pink Cowboy hat](/images/blog/pink-cowboy.png){: .stdright #small} By "a pink cowboy hat" I take it that you are advocating for a blame culture. Our approach is that the pipeline is going to serve as the equivalent of an [andon cord in the Toyota Production System](https://www.youtube.com/watch?v=B_nSvN_L4hc). If a commits break the pipeline, it's the equivalent of somebody pulling the andon. When that happens you're supposed to walk up to him and ask him "how can I do to help you".
+![Pink Cowboy hat](/images/blog/pink-cowboy.png){: .stdright #small} By "a pink cowboy hat" I take it that you are advocating for a blame culture. Our approach is that the pipeline is going to serve as the equivalent of an [andon cord in the Toyota Production System](https://www.youtube.com/watch?v=B_nSvN_L4hc). If a commits break the pipeline, it's the equivalent of somebody pulling the andon. When that happens you're supposed to walk up to him and ask him _"what can I do to help you?"_.
 
 Blame culture is counter productive, you should burn your pink cowboy hat.
 
