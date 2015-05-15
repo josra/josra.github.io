@@ -388,6 +388,10 @@ a {
 
 }
 
+.stdright#small{
+	width: 300px;
+}
+
 .stdright {
    float:right;
 }
