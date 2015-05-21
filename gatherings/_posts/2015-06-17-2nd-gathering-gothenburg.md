@@ -25,6 +25,8 @@ We will discuss how it is possible to become part of the same automated git flow
 The program for the day will be detailed further during the first week of June. Based on input from the registered stakeholders.
 
 
+<div style="width:100%; text-align:left;" ><iframe  src="//eventbrite.com/tickets-external?eid=17080605551&ref=etckt" frameborder="0" height="214" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a class="powered-by-eb" style="color: #dddddd; text-decoration: none;" target="\_blank" href="http://www.eventbrite.com/r/etckt">Powered by Eventbrite</a></div></div>
+
 <!--agenda>
   <timeslot>
     <start>&nbsp;</start>
