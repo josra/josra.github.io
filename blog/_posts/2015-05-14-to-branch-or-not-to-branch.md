@@ -14,8 +14,9 @@ tags:   [Flow, Git, Branching strategy, Jenkins CI]
 
 * At the [Continuous Delivery and DevOps conference in Oslo 2015](www.code-conf.com/osl15) a debate ignited. The dispute was whether branching and automated integration is good or if _trunk based_ development is better. The dispute caught fire on twitter as summarized in this [blog post by Seb Rose](http://claysnow.co.uk/continuous-delivery-conversations/).
 * The debate manifested itself around a the blog about the [automated Git flow by Josra](http://www.josra.org/blog/An-automated-git-branching-strategy.html) which Steve Smith gave it a bit of rough.
-* Seb Rose has arranged a one hour Google Hangout on Monday May 18th where he together with Mike Long, Olve Maudal, Dave Farley, Steve Smith and myself, Lars Kruse will debate the issue - It will be fun.
 * This post is a response back to [Steve's comment](https://plus.google.com/109269863739305725689/posts/Nh4GeyYoDdQ). Just to get the talk going.
+* Seb Rose arranged a [Google Hangout on Air](https://plus.google.com/u/0/hangouts/onair/watch?hid=hoaevent/c1mbqj6b93o6stcbl2qkdt8udmc&ytl=30yN4hefrt0&wpsrc=yta){: target="\_blank"} Monday May 18th where he together with Mike Long, Olve Maudal, Dave Farley and myself, Lars Kruse debated the issue. Unfortunately Steve Smith couldn't make it to the hangout.
+* But Steve managed never the less to come up with yet [another lengthy comment](https://plus.google.com/109269863739305725689/posts/EedSSMMiTMy){: target="\_blank"} on the same topic.
 
 So let me start all over again:
 
