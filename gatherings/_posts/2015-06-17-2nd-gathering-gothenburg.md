@@ -36,14 +36,17 @@ The Program is preliminary - input from attendees is very welcome - mail any sug
 
           Brief introductions
 
-          Discuss migration strategies based on experiences and known technologies - outline a possible joint strategy
+          Discuss migration strategies based on experiences
+          and known technologies. Outline a possible joint
+          strategy
 
     11:30 Lunch
 
     12:30 Reassemble
 
-          Discuss experiences with the Josra Git flow and the automations.
-          - outline a possible joint strategy for features.
+          Discuss experiences with the Josra Git flow and the
+          automations.
+          Outline a possible joint strategy for features.
 
     14:00 Wrap-up
 
