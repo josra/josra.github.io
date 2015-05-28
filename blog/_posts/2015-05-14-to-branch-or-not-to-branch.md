@@ -46,7 +46,7 @@ Naming it after a Subversion oriented approach and call it _Trunk based_ doesn't
 
 The process that you `pull origin master` and `push origin master` as opposed to using a different branch name doesn't change the fact that in both operations Git will do an implicit merge under the hood.
 
-Even in _trunk based_ development merges may be reguired, and the merges may fail.
+Even in _trunk based_ development merges may be required, and the merges may fail.
 
 You should avoid merging by the way you organize your development team - not by how you organize your private workspaces or by how you name your branches.
 
@@ -65,7 +65,7 @@ I'm all in favor for what you call _trunk based_ if the interpretation is that _
 
 In the SCM literature this approach with only one long-lived mainline branch is often referred to as "[late branching](http://www.bradapp.com/acme/branching/branch-policy.html)" or in context of product lines it's a "[release train](http://www.scaledagileframework.com/agile-release-train/)". I believe it's the same phenomena you call _trunk based_ only decorated with the postulate that _any other_ branch is evil. The word trunk is derived from Subversion which by default names the integration branch _trunk_, and I agree that in Subversion branches are at least semi-evil. But I wouldn't name anything after Subversion - unless it was something bad of course.
 
-The fact that Subversion doesn't handle branches well, simply doesn't support the the conclusion that branches are generically evil.
+The fact that Subversion doesn't handle branches well, simply doesn't support the conclusion that branches are generically evil.
 
 ## Substantial rework is required
 
