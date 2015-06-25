@@ -156,8 +156,8 @@ The alliance activities and collaboration platform is maintained through:
 
 ### Social
 
-* Twitter account [@josraorg](http://www.twitter.org/josraorg)
-* Twitter hashtag [#josra](ttps://twitter.com/hashtag/josra?src=hash) 
+* Twitter account [@josraorg](http://www.twitter.com/josraorg)
+* Twitter hashtag [#josra](https://twitter.com/hashtag/josra?src=hash)
 
 ## Josra case management
 
