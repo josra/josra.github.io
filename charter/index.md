@@ -6,7 +6,7 @@ author: Lars Kruse
 
 ## Name
 
-The name of the alliance is "Joint Open Source Roadmap Alliance". 
+The name of the alliance is "Joint Open Source Roadmap Alliance".
 
 Although JOSRA is technically an abbreviation of the alliance's full name, it shall frequently be used as the actual name for the alliance and when used in text it shall be spelled as such with a capital J; _Josra_.
 
@@ -37,16 +37,16 @@ Membership of the alliance is essentially defined by a _Josra membership contrac
 
 ### Members
 
-Members will be listed here as they sign up. At this point we have a group of prospects. 
+Members will be listed here as they sign up. At this point we have a group of prospects.
 
 We refer to this group as _The founding Innovators_. It's defined by the group of companies who participated in reviewing the initial versions of the charter and the membership contact.
 
 Members are listed chronically by their proclaimed intention to sign:
 
-* [Yxlon International](http://www.yxlon.com){: target="_blank"}
-* [Grundfos](http://www.grundfos.dk){: target="_blank"}
-* [Atmel](http://www.atmel.com){: target="_blank"}
-* [Volvo IT](http://www.volvoit.com/){: target="_blank"}
+* [Yxlon International](http://www.yxlon.com){: target="blank"}
+* [Grundfos](http://www.grundfos.dk){: target="blank"}
+* [Atmel](http://www.atmel.com){: target="blank"}
+* [Volvo IT](http://www.volvoit.com/){: target="blank"}
 
 ## Background and Scope
 
@@ -64,10 +64,10 @@ The work is not “punch out” on ongoing, unfinished work. Only when a cases i
 
 Funding can be used for:
 
-* Maintenance of existing features in Open Source core or plugins 
-* Development of new features in Open Source core or plugin 
+* Maintenance of existing features in Open Source core or plugins
+* Development of new features in Open Source core or plugin
 * Configuration & adaptation of existing features in the JOSRA tool stack
-* Research on Open Source technologies, including: 
+* Research on Open Source technologies, including:
     * Feasibility studies
     * Proof of technology studies
     * Documentation of Open Source technologies and features
@@ -82,13 +82,13 @@ If an alliance member is ambitious and wish to add more funding to development t
 
 This additional funding can be spent on the Josra alliance initiatives under the exact same conditions as the basic 40 hours
 
-## Processes 
+## Processes
 
 A typical process for engagement during the annual meetups could look like this:
 
 1. Members of the Josra community maintains a dialog through cards and comments on the various [roadmap trello boards](www.trello.com/josra).
 1. At some point an issue becomes so pressing for at membership organization that either the _geek_ or the _chief_ raises it to a development case.
-1. The issue can be a bug, a feature request, a research request or a request for configuration or adaption. As soon as it's established that the requested work is indeed beneficial to the alliance as a whole, a _worker_ is assigned to the task and an official case is opened in the preferred issue tracking system for that particular Open Source tool. 
+1. The issue can be a bug, a feature request, a research request or a request for configuration or adaption. As soon as it's established that the requested work is indeed beneficial to the alliance as a whole, a _worker_ is assigned to the task and an official case is opened in the preferred issue tracking system for that particular Open Source tool.
 1. The _worker_ makes a qualified estimated of the work at hand and a call for co-funding goes out to the entire Josra community. Each member has 40 hours of work per year included in the membership, and they can support any suggested features they wish. Josra members who throw funding in a particular case will become part of the _stakeholder group_ for that particular case.
 1. The _worker_ will stay on the case and maintain a continuous dialog with the _stakeholder group_ to make sure he gets sufficient feed-back and potentially also access to an environment where nature of the issue can be observed, investigated and developed.  
 1. When the issue is solved, the solution is deliver to the respective Open Source community and the alliance members - as well as anyone else - can pull it from there.
@@ -109,7 +109,7 @@ __An example:__
 
 Say a member wishes a new feature - perhaps a new mojo in Maven - but Maven is not currently part of the Josra tool stack.
 
-The procedure is exactly the same, as if it was already in the tool stack ([described earlier](#processes)): The development case is defined and estimated and a request for co-funding is issued. 
+The procedure is exactly the same, as if it was already in the tool stack ([described earlier](#processes)): The development case is defined and estimated and a request for co-funding is issued.
 
 Even if the member can't form a _stakeholder group_, the member can still choose to carry on with the development case as the sole funder - and the tool will effectively become part of the Josra tool stack.
 
@@ -119,7 +119,7 @@ At least once every year, Praqma is responsible for organizing a meetup, that sh
 
 The annual meetups shall seek hosting facilities and venues at the membership organizations. Expenses for catering, venues etc shall be covered by Praqma.
 
-Each alliance member is entitled to register two self-appointed organization representatives to participate at the annual JOSRA meetup representing the roles _Chief_ and _Geek_. 
+Each alliance member is entitled to register two self-appointed organization representatives to participate at the annual JOSRA meetup representing the roles _Chief_ and _Geek_.
 
 Access to the annual Josra meetup in the roles as _Chief_ and _Geek_ are included in the membership.
 
@@ -157,13 +157,13 @@ The alliance activities and collaboration platform is maintained through:
 ### Social
 
 * Twitter account [@josraorg](http://www.twitter.org/josraorg)
-* Twitter hashtag [#josra](ttps://twitter.com/hashtag/josra?src=hash) 
+* Twitter hashtag [#josra](ttps://twitter.com/hashtag/josra?src=hash)
 
 ## Josra case management
 
 All issues are initiated through the various roadmaps, maintained through Trello Boards at: [www.trello.com/josra](www.trello.com/josra)
 
-When an issues is raised to development or maintenance case, a ticket is created in the case management system designated or preferred by the corresponding Open Source community. 
+When an issues is raised to development or maintenance case, a ticket is created in the case management system designated or preferred by the corresponding Open Source community.
 
 E.g for Jenkins CI that system is [issues.jenkins-ci.org](issues.jenkins-ci.org).
 
@@ -171,7 +171,7 @@ If no naturally designated case management system exist for a given case. Praqma
 
 ## Josra related internships
 
-Through engagement with DIKU and Copenhagen Business School Praqma hosts Computer Science interns from both Master, Bachelor and AP courses. 
+Through engagement with DIKU and Copenhagen Business School Praqma hosts Computer Science interns from both Master, Bachelor and AP courses.
 
 We’ve currently hosted more than 2o interns and we’re constantly defining and offering challenging internships for students at the educational institutions that we’re collaborating with. We’re engaging interns in Open Source related assignments and challenges. These internship programs can potentially span hundreds of effective work hours by talented computer scientists and craftsmen in-spe.
 
@@ -188,4 +188,3 @@ Code will be delivered as Open Source and licensed by the appropriate Open Sourc
 If no license type is recommended by the respective Open Source community, a _university style_ license such a M.I.T or BSD is chosen
 
 Copy rights on Open Source code will belong to the maintainer – by default Praqma – unless agreed differently by among the _stakeholder group_ of a particular delivery.
-

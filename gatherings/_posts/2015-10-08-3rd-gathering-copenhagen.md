@@ -5,7 +5,7 @@ author: Lars Kruse
 ---
 
 _Copenhagen, October 8th 2015<br/>
-In Conjunction with the CoDeCPH Conference_{: .subtitle}
+In Conjunction with the Continuous Delivery & DevOps Conference_{: .subtitle}
 
 ##Venue:
 
