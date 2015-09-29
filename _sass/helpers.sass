@@ -1,0 +1,12 @@
+=box-shadow($args...)
+  // box-shadow: none|h-shadow v-shadow blur spread color |inset|initial|inherit
+  @each $prefix in "", -moz-, -webkit-, -o-, -khtml-
+    #{$prefix}box-shadow: $args
+
+
+=text-shadow($h-shadow, $v-shadow, $blur-radius, $color)
+  text-shadow: $h-shadow  $v-shadow $blur-radius $color
+
+=border-radius($radius)
+  @each $prefix in "", -moz-, -webkit-, -ms-
+    #{$prefix}border-radius: $radius
