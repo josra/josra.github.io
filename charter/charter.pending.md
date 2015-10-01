@@ -48,36 +48,41 @@ Our mission is to expand that kind of joint development of software to Open Sour
 
 ## Funding
 
+The primary work in Josra is financed from the joint pot.
+
 For each signup or renewal of an annual alliance membership, there will be added 40 hours of work to the common _Josra pot_, all these work hours will be spent on development cases creating and maintaining tools and technologies in the Josra tool stack.
 
 Josra memberships will be renewed, and invoices for the membership fee sent out,  annually on the effective date of the individual member contracts.
 
 Funding can be used for:
 
-* Maintenance of existing features in Open Source core or plugins.
-* Development of new features in Open Source core or plugin.
+* Maintenance of existing features in an Open Source project.
+* Development of new features in an Open Source project.
 * Configuration & adaptation of existing features in the Josra tool stack.
 * Research on Open Source technologies, including:
     * Feasibility studies.
     * Proof of technology studies.
     * Documentation of Open Source technologies and features.
 
-The ruling concept for approving work within the Josra scope is that the work conducted should add value to the Josra tool stack in general and evenly relevant to the individual Josra members.
+The ruling concept for approving work within the Josra scope is that the work conducted should add value to the Josra tool stack in general and be relevant to the Josra members.
 
 In case of doubt, wether a particular development case is regarded as within the Josra scope or not, the Josra community will be asked for arguments.
 
-### Additional funding
+### Additional funding and stakeholder groups
 
-If an alliance member wish to add more funding to a specific project to be run in Josra context. Josra related work can be offered at a discounted price. If a member is adding extra ordinary funding to a development case, then that particular member is to be regarded as part of the _stakeholder group_ of that development case.
+Occasionally an alliance member wish to initiate a project or development case, which is to be considered out of the ordinary to me financed from the joint pot. Either because it's too big to fit or because it has limited interest to the Josra members in general.
+
+An alliance member is welcome to add more funding to a specific project to be run in Josra context, Josra related work can be offered at a favorable and discounted price.
+
+When a member is adding additional funding to a development case, we will strive to seek co-funding and a _stakeholder board_ is formed. All members contributing additional funding to the cause are invited to have a seat at the _stakeholder board_ of that development case. The _stakeholder board_ is then jointly serving the role as _product owner_ through out the span of the work case.
 
 ## Processes
 
 A typical process for executing work within Josra looks like this:
 
 1. Josra members gather frequently in groups, or they interact and communicate through cards and comments on the various [roadmap boards in Trello ](http://www.trello.com/josra).
-1. At some point through the dialog, a development case emerges and it's described as a _Statement of Work_ (SoW) and posted to the Josra members through the official news mail list.
-1. The SoW will remain in a short hearing period, allowing all Josra members (_chiefs_ and _geeks_) to react and comment on the SoW.
-1. If the SoW isn't blocked during the hearing period, a _worker_ is assigned to the task and work begins.
+1. At some point through the dialog, a development case emerges and it's described as a _Statement of Work_ (SoW) on the Josra web and announced in a posting to the Josra members through the official news mail list.
+1. If any Josra members wish to challenge the SoW, the should do so immediately, as work is initiated as soon as the SoW is releasd.
 1. Praqma will organize, manage and facilitate the process. If a Josra member  throws _additional funding_ in a particular case, that member will become part of the _stakeholder group_ for that particular case.
 1. The _worker_ will stay on the case and maintain a continuous dialog with the _stakeholder group_ to make sure he gets sufficient feed-back and potentially also access to an environment where the nature of the issue can be observed, investigated and developed.  
 1. When the case is resolved, the solution is deliver to the respective Open Source community and the alliance members - as well as anyone else - can pull it from there.
@@ -139,9 +144,11 @@ The alliance activities and collaboration platform are maintained through:
 
 * Continuous dialog between Praqma _workers_ and _facilitators_ and the member organization's _geek_, _chief_ and _civilians_.
 * Josra's organization on [Trello boards](http://www.trello.com/josra)
-* The Josra getherings - where the entire Josra community are encouraged to participate.
+* The Josra gatherings - where the entire Josra community are encouraged to participate.
 * Josra's organization on [GitHub](http://www.github.com/josra)
+* Praqma's organization on [GitHub](http://www.github.com/praqma)
 * Josra's news mail.
+* Josra's twitter account [josraorg](http://twitter.com/josraorg)
 
 ### Social
 
@@ -154,7 +161,7 @@ All issues are initiated through the various roadmaps, maintained through Trello
 
 When an issues is raised to development case, a ticket is also created in the case management system designated or preferred by the corresponding Open Source community.
 
-E.g for Jenkins CI that system is [issues.jenkins-ci.org](issues.jenkins-ci.org).
+E.g for Jenkins CI plugins that system is [issues.jenkins-ci.org](issues.jenkins-ci.org), if no recommended or de facto system exists for a particular product, we will use the features provided by GitHub.
 
 If no naturally designated case management system exist for a given case. Praqma's incident management system will be used - cases can be opened simply by mailing them to [support@praqma.net](support@praqma.net).
 
