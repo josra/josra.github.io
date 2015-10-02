@@ -333,6 +333,10 @@ a {
    margin-top: 0px;
 }
 
+.stdcenter#full-size {
+	width: 100%;
+}
+
 p a {
   font-weight: 400;
 }

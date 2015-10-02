@@ -14,9 +14,11 @@ Here’s a short and sweet example of the result, showing off how to fully confi
 
     job("myJob"){
       wrappers{
-        pretestedIntegration('SQUASHED", "master", "origin")
-      }
-    }
+        pretestedIntegration(
+          'SQUASHED',
+          'master',
+          'origin
+    )}}
 
 Pretty neat, huh?
 
