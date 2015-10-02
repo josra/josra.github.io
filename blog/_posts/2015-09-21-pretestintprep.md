@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  Prepping Pretested Integration Plugin
+title:  Prepping Pretested Integration
 author: Mads Nielsen & Lars Kruse
 ---
 
-**To ease usability the credentials already setup for the Git plugin is now planned reused in the Pretested Integration plugin.**{: .inverted}
+_To ease usability of the Pretesed INtegration plugin, the credentials already setup for the Git plugin will be reused in the Pretested Integration plugin._{: .inverted}
 
-__The Pretested Integration Plugin has grown to becoming a great success, more and more people have  joined the bandwagon and are now implementing an automated *benevolent dictator governance model* ...or at least a guaranteed pristine master branch.__
+**The Pretested Integration Plugin has grown to becoming a great success, more and more people have  joined the bandwagon and are now implementing an automated _benevolent dictator governance model_ ...or at least a guaranteed pristine master branch.**
 
 The Pretested Integration plugin is designed to mimic the *benevolent dictator governance model* which in a few words is based on the conceptual idea that you have *read* access to your master branch, but you do not have write access to it.
 
@@ -22,12 +22,9 @@ A more obvious approach is to re-use the credentials you’ve punched in to  aut
 
 In order for Pretested Integration plugin to utilize the credential plugin are required to cease the use of the Git CLI implementation to an implementation that uses the GitClient plugin for all git operations, but it turned out that not all git features we used was implemented in the GitClient plugin.
 
-So as a prerequisite for the desired swap to the credential plugin we have added the *--squash *option when merging as well as the ability to merge without implicitly committing to the GitClient Plugin.
+So as a prerequisite for the desired swap to the credential plugin we have added the `--squash` option when merging as well as the ability to merge without implicitly committing to the GitClient Plugin.
 
 * [https://github.com/jenkinsci/git-client-plugin/pull/169](https://github.com/jenkinsci/git-client-plugin/pull/169)
-
 * [https://github.com/jenkinsci/git-client-plugin/pull/185](https://github.com/jenkinsci/git-client-plugin/pull/185)
 
-The pull requests have been accepted!
-
-Next up it to actually implement the authentication based on the Credentials plugin. It’s on the sprint log!
+Both pull requests have been accepted! So the next release of the Git plugin is expected to contain the features in the GitClient that we will be utilizing. Next up is to actually include the authentication based on the Credentials plugin in the Pretested Integration plugin. It’s in the making and we hope top be able to release as soon as next version of the Git plugin is out!
