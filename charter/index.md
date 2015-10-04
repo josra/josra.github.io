@@ -4,6 +4,8 @@ title: Josra charter
 author: Lars Kruse
 ---
 
+_Please note, that a [new version of the charter](/blog/charter.pending.html) is pending. Hopefully it will become effective after next general assembly on Thursday Oct. 7th_{: .inverted}
+
 ## Name
 
 The name of the alliance is "Joint Open Source Roadmap Alliance".
