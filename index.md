@@ -4,7 +4,7 @@ title: Josra Front
 ---
 #Joint Open Source Roadmap Alliance
 
-__JOSRA is an alliance that supports the members in feeling safe when they are dependent on Open Source tools in their software development process. By pooling together interests, resources, genuine needs and Open Source experts with lots of good community karma, JOSRA facilitates best practices and joint development on the Open Source tool that is shared among the members.__
+__Josra is an alliance that supports the members in feeling safe when they are dependent on Open Source tools in their software development process. By pooling together interests, resources, genuine needs and Open Source experts with lots of good community karma, Josra facilitates best practices and joint development on the Open Source tool that is shared among the members.__
 
 <div class="stdcenter"><img src="/images/josra-logo_2x3.png"/></div>
 
@@ -41,5 +41,5 @@ The [annual membership fee](/offer) - will give you a pile of [benefits and supp
 * Web: [www.josra.org](http://www.josra.org)
 * Roadmaps in Trello: [Http://www.trello.com/josra](www.trello.com/josra)
 * Group on LinkedIn:  ["Joint Open Source Roadmap Alliance"](https://www.linkedin.com/groups/Joint-Open-Source-Roadmap-Alliance-7403229)
- 
+
 If you are interested in joining JOSRA or if you have any questions, please contact **Lars Kruse** ([lak@praqma.com](mailto:lak@praqma.com) / +45 2087 2530)
