@@ -9,7 +9,7 @@ title: Sponsors
 [__Novelda__<br/>Specializing in nanoscale wireless low-power technology for ultra-high resolution impulse radar.](http://xethru.com){: .sponsorbox .gold #novelda target="member"}
 [__Volvo__<br/>Manufacture trucks, buses, construction equipment, marine and industrial power systems, and aerospace systems.](http://www.volvo.com){: .sponsorbox .gold #volvo target="member"}
 [__GrammaTech__<br/>Creators of CodeSonar; The static analysis tool for C, C++, Java, and binary code.](http://www.grammatech.com){: .sponsorbox .gold #grammatech target="member"}
-[__MAN Diesel & Turbo__<br/>Full range supplier of pumps for heating, air conditioning, irrigation, industry, groundwater, boosting and water.](http://dieselturbo.man.eu){: .sponsorbox .gold #mandieselturbo target="member"}
+[__MAN Diesel & Turbo__<br/>Provider of large-bore diesel engines and turbomachinery for marine and stationary applications.](http://dieselturbo.man.eu){: .sponsorbox .gold #mandieselturbo target="member"}
 [__Cryptera__<br/>Leading within encrypted PIN Pads, unattended Payment Terminals, Remote encryption keys.](http://www.cryptera.com){: .sponsorbox .gold #cryptera target="member"}
 
 
