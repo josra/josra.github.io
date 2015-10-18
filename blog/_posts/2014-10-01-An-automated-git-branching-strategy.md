@@ -8,9 +8,9 @@ author: Lars Kruse
 
 _...A branching strategy is definitely required - **but which one?**_
 
-This flow describes a branching strategy in Git, which is specifically designed to be easy both to automate and to roll out event in large organizations. The flow uses a _branchy_ approach and is not dependent on any particular repository server. It's compliant with all that we've come across; GitHub, GitLab, Stash, Gerrit etc. It is automated purely by using  [Jenkins CI](www.jenkins-ci.org "Our favorite automation platform") and two plugins: The standard [Git  plugin][git-plugin] and the [Pretested Integration Plugin][pretested-integration-plugin].
+This flow describes a branching strategy in Git, which is specifically designed to be easy both to automate and to roll out event in large organizations. The flow uses a _branchy_ approach and is not dependent on any particular repository server. It's compliant with all that we've come across; GitHub, GitLab, Stash, Gerrit etc. It is automated purely by using  [Jenkins CI](http://www.jenkins-ci.org) "Our favorite automation platform" and two plugins: The standard [Git  plugin][git-plugin] and the [Pretested Integration Plugin][pretested-integration-plugin].
 
-You can see this flow as an optimized and automated version of the wide-spread - but in our opinion - far too complex model described in ["A successful branching model"](http://nvie.com/posts/a-successful-git-branching-model/) by @nvie. 
+You can see this flow as an optimized and automated version of the wide-spread - but in our opinion - far too complex model described in ["A successful branching model"](http://nvie.com/posts/a-successful-git-branching-model/) by @nvie.
 
 __The CoDe:U Git Flow looks like this__
 
@@ -22,7 +22,7 @@ The flow is designed to be easy to communicate and teach, so we've made a handfu
 
 The approach we use is _branchy_.
 
-By _branchy_ we mean that the underlying meta data that drives the model and describes the state and transitions is based purely on branches. This is done because Git is distributed and therefore relies on _clones_ for synchronizing and a clone is - exactly as the word describes; a _clone_ - a copy of something else. 
+By _branchy_ we mean that the underlying meta data that drives the model and describes the state and transitions is based purely on branches. This is done because Git is distributed and therefore relies on _clones_ for synchronizing and a clone is - exactly as the word describes; a _clone_ - a copy of something else.
 
 Some technologies use different clones within the same repository to define different states or promotions. We believe that this approach defies the purpose of a clone entirely. Consequently we also believe that the states, promotions and transitions must be defined by metadate that can freely be synchronized between clones as branches.
 
@@ -68,11 +68,11 @@ __The 10 Git commitments__
 
 * Any push to a centralized repository, that contains a commit on a development branch matching the naming convention triggers an automated integration
 
-* 
+*
 Some development branches may be tied to maintenance branches
 
 
-* All integrations onto promotion branches are automated 
+* All integrations onto promotion branches are automated
 
 
 * Any given promotion branch can only have one contributor
@@ -84,7 +84,7 @@ Let's go through these principles one at a time.
 
 ![master branch](/images/blog/master-branch.png){: .stdright style="width:120px;"}
 
-This commitment is really the core concept of Continuous Integration: It's a technique for software developers to share work and collaborate as a team. 
+This commitment is really the core concept of Continuous Integration: It's a technique for software developers to share work and collaborate as a team.
 
 The integration branch is where all work that might have been done in parallel becomes sequential. Working in parallel for too long time only makes it harder to come together again, that's why integration should happen, not just frequently or occasionally but _continuously_.
 
@@ -103,7 +103,7 @@ The `master` branch has special meaning in Git. It's the default integration bra
 
 You can change what appears to be the default branch to something different than `master` using [`git-symbolic-ref`](https://www.kernel.org/pub/software/scm/git/docs/git-symbolic-ref.html) but it isn't consistent across clones so why go against the convention?
 
-This commitment is also a raised finger against the practice described in @nvie's Git-flow, where he describes two ever-lasting [main branches](http://nvie.com/posts/a-successful-git-branching-model/#the-main-branches): `master` and `develop`. 
+This commitment is also a raised finger against the practice described in @nvie's Git-flow, where he describes two ever-lasting [main branches](http://nvie.com/posts/a-successful-git-branching-model/#the-main-branches): `master` and `develop`.
 
 A true release train only have _one_ never ending branch and in Git that is `master`.
 
@@ -139,7 +139,7 @@ The poll phase is rare and special. Rare because SCM plugins are the only ones t
 
 The standard [Git plugin][git-plugin] spans the poll phase - if you're using polling -  and the pre-build phase. It uses the pre-build phase to establish the workspace on the branch-specifier you've configured, or the one that it passes as parameter.
 
-In our example of how the branch specifier is configured in the Git plugin we have used `origin/ready/**`to have it be triggered by any branch pushed to `origin` prefixed with `ready/`. 
+In our example of how the branch specifier is configured in the Git plugin we have used `origin/ready/**`to have it be triggered by any branch pushed to `origin` prefixed with `ready/`.
 
 ![Git plugin branch specifier](/images/blog/git-branch-specifier.png){: .stdcenter}
 
@@ -158,19 +158,19 @@ The build phase is really the test that shall verify it, this is where you enter
 Ask yourself:
 
  \- _"What's the minimum criteria that my colleagues should meet in order to share code on the integration branch?"_
- 
+
  And the answer is probably in the lines of:
- 
+
  \- _"That they don't break the build!"_
- 
+
 In a modern world that translate to something like; the code can build and the unit tests can run without errors.
- 
+
 After the build phase is done, control is once again handed over to the [Pretested Integration Plugin][pretested-integration-plugin] to determine if we like the merged workspace or not.
 
 If the build phase was successful, we push the changes to `origin` and delete the source branch. If the build failed we will do ...absolutely nothing.
 
 
-#### All integrations onto promotion branches are automated 
+#### All integrations onto promotion branches are automated
 
 ![Automated promotions](/images/blog/automated-promotions.png){: .stdright style="width:300px"}
 
@@ -190,7 +190,7 @@ Well this commitment is the one that saves me from being hit by my own argument.
 
 On the contrary of an integration branch which can be _fed_ from many different development branches, a promotion branch will always have the same source.
 
-In our example `master` is the source for `stable` and then `stable` is the source for `release`. 
+In our example `master` is the source for `stable` and then `stable` is the source for `release`.
 
 In Git terms this means that _any_ commit on a promotion branch will be _fast-forwarded_ there from somewhere else. When something is fast-forwarded in Git it means that no new commit is actually created. The branch head of the currently active branch will be set to point to an already existing commit which already exist on the source branch.
 
@@ -207,19 +207,19 @@ Some of these stages you might want to capture as they flow, then you simply tag
 
 In other words: _"anything that is not aiming for next release should be kept somewhere else until its due."_
 
-This commitment is also partially a critiques of @nvie's flow in which [he says about release branches](http://nvie.com/posts/a-successful-git-branching-model/#release-branches) that they are branches you create when: 
+This commitment is also partially a critiques of @nvie's flow in which [he says about release branches](http://nvie.com/posts/a-successful-git-branching-model/#release-branches) that they are branches you create when:
 
-> ...develop (almost) reflects the desired state of the new release. 
+> ...develop (almost) reflects the desired state of the new release.
 
 and they are used for:
 
-> ...last-minute dotting of i’s and crossing t’s. 
+> ...last-minute dotting of i’s and crossing t’s.
 
 This way of thinking about branches that @nvie advocates here, reflects that the software development process is divided into phases, and that we have a _stabilization phase_ just prior to each release. The stabilization phase is supposedly only relevant to some, but not all, of the team members and therefore the process is moved elsewhere.
 
 We believe this way of thinking defies the purpose of a Continuous Delivery pipeline which we advocate and which essentially implements our _definition of done_.
 
-From a practical point of view it's likely, that most shops have setup the pipeline to run on the integration branch, and to move away from it would mean that we should move or copy the pipeline setup too. 
+From a practical point of view it's likely, that most shops have setup the pipeline to run on the integration branch, and to move away from it would mean that we should move or copy the pipeline setup too.
 
 Ideally we're all in for that. The concept of _configuration as code_ where you can version control and execute your configurations, to a point where entire pipelines, no matter how complex they are and how many resources they demand to execute, always comes by the click of a button.
 
@@ -229,13 +229,13 @@ But if you don't have that - _yet_. Its more reasonable and efficient that you a
 
 I already touched briefly on the concept of pipelines in the previous section, This is the commitment that explicitly mentions them.
 
-Consider the proverb _"Every commit is a release candidate"_. 
+Consider the proverb _"Every commit is a release candidate"_.
 
 A pipeline is the line of related job executions, which all together verifies that your code is done. It's the pipeline that lets you know whether you are indeed done or not. Whether that particular commit was indeed a release candidate or not.
 
 Typically pipelines are implemented as jobs that succeed each other and it only is the first _toll-gate_ job actually triggered by something happening in your version control system. The following jobs are started by the previous job but only if it succeeds.
 
-So it's a chain of events that stops if you're not done. And if it completes succesfully then you know you're done. 
+So it's a chain of events that stops if you're not done. And if it completes succesfully then you know you're done.
 
 Drawn as a state-transition diagram it may look like this:
 
@@ -267,9 +267,9 @@ How would you verify the two products that uses the component then?
 
 Well in terms of the grey 2x4 Lego blocks you would probably just simply count if you have the right number of blocks according to the spec.
 
-The concept of having _software as inventory_ is the key here. 
+The concept of having _software as inventory_ is the key here.
 
-Even if you don't do mass productions of software components and even though a component may not even be used in that many different products, you still get the benefit of being able to exploit the fact that given different contexts you'll be using quite different verification methods. 
+Even if you don't do mass productions of software components and even though a component may not even be used in that many different products, you still get the benefit of being able to exploit the fact that given different contexts you'll be using quite different verification methods.
 
 When a component is considered done according to it's specs it becomes inventory - In software development we use artifact management systems for inventory.
 
@@ -300,7 +300,7 @@ This commitment defines the flag.
 
 The fact that you push something to `origin` that resides on a branch that matches the branch specifier as discussed [earlier](#all-integrations-onto-an-integration-branch-must-pass-an-automated-toll-gate) is all it takes to get the ball rolling.
 
-This concept of using a branch naming convention as the flag also gives you the freedom to do - literally - anything you want outside the naming convention. 
+This concept of using a branch naming convention as the flag also gives you the freedom to do - literally - anything you want outside the naming convention.
 
 There are no rules on how you will name your branches in your local clones. There are no rules saying that you're not allowed to push to `origin` for backing up your local branches or for sharing code with colleagues. You're free to do what ever you want.
 
@@ -330,7 +330,7 @@ Seen from the perspective of the `master` branch and the core concept of a relea
 
 But seen from the perspective of the maintenance branch itself everything is different. It's like a complete micro cosmos, where all the principles that apply to the macro cosmos are applied again in a smaller scale.
 
-So a maintenance branch behaves like the `master` branch where integrations are automated, where you may potentially have promotion branches coming off from it too, and if you do then even the promotions are automated. 
+So a maintenance branch behaves like the `master` branch where integrations are automated, where you may potentially have promotion branches coming off from it too, and if you do then even the promotions are automated.
 
 You may even tag certain commits to give them certain meanings and you may potentially release to end-users or customers directly from this branch, which obviously indicates that the pipelines are fully implemented on this maintenance branch too - for all relevant components and products.
 
