@@ -10,9 +10,9 @@ __Josra is an alliance that supports the members in feeling safe when they are d
 
 ##Being safe - while being dependent on Open Source
 
-Together with our clients we release almost everything we create as Open Source. We have more than 30 Open Source repositories on Github, representing technologies ready to share with others and we are the maintainers of more than 10 plugins on Jenkins CI - all Open Source. When companies use Open Source tools in their tool stack they also need to have a strategy on how to actively make sure that the dependency doesn't turn into a vulnerability. The tools need directions and they need maintenance if they are broken. As a Open Source user you can either be an _innovator_ or a _free-rider_. A free-rider will simple sit it out and wait for someone else to fix the problem. An innovator will join the community and fix the issue or add the feature himself.
+Together with our clients we release almost everything we create as Open Source. We have more than 30 Open Source repositories on GitHub, representing technologies ready to share with others and we are the maintainers of more than 10 plugins on Jenkins CI - all Open Source. When companies use Open Source tools in their tool stack they also need to have a strategy on how to actively make sure that the dependency doesn't turn into a vulnerability. The tools need directions and they need maintenance if they are broken. As a Open Source user you can either be an _innovator_ or a _free-rider_. A free-rider will simple sit it out and wait for someone else to fix the problem. An innovator will join the community and fix the issue or add the feature himself.
 
-JOSRA enables the members to contribute by proxy, meaning that JOSRA members can take on the role as innovator both through influencing the roadmaps of the tools maintained by the alliance and by exploting the support and development cases included in the membership. This influence can be execised without actually having to re-school employees away from the core business domain and into becoming Open Source experts. Praqma has substantial Open Source community karma. This is our business. We will do it for you.
+JOSRA enables the members to contribute by proxy, meaning that JOSRA members can take on the role as innovator both through influencing the roadmaps of the tools maintained by the alliance and by exploiting the support and development cases included in the membership. This influence can be exercised without actually having to re-school employees away from the core business domain and into becoming Open Source experts. Praqma has substantial Open Source community karma. This is our business. We will do it for you.
 
 ##The idea behind the concept
 
@@ -20,7 +20,7 @@ The idea behind JOSRA was born from our long experience with developing, hosting
 
 ##Yearly meet-ups and online roadmaps
 
-One time every year the JOSRA alliance members are invited to a whole-day meet-up. Each alliance member is entitled and encouraged to send two participants; A geek and a chief. We share experiences and visions and after lunch we split up, so while chiefs plan roadmaps geeks do hackatons - in the evening we eat-up and drink-up together.
+One time every year the JOSRA alliance members are invited to a whole-day meet-up. Each alliance member is entitled and encouraged to send two participants; A geek and a chief. We share experiences and visions and after lunch we split up, so while chiefs plan roadmaps geeks do hackathons - in the evening we eat-up and drink-up together.
 
 Between meetings, all tools in the JOSRA tool stack are being discussed and innovated through different [Trello boards](http://trello.com/josra) made available to all alliance members. More lengthy discussions and general feed-back can be communicated at the "Joint Open Source Roadmap Alliance" [LinkedIn group](https://www.linkedin.com/groups/Joint-Open-Source-Roadmap-Alliance-7403229).
 
