@@ -120,7 +120,7 @@ My alias for the `commit-again` looks like this:
 
 ##Now for the deliver
 
-At this point I just want to deliver, meaning the I want to push it to a `ready/*`  branch - since that how I've setup the process using the [Pretested Integration Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Pretested+Integration+Plugin){: target="pretest"} in Jenkins. And hopefully I don't have to use this branch ever again, but I still think it's a little premature to just delete it, because if something goes wrong during my automated integration, or if I'm rejected, then I still want easy access to this branch to fix it.  So for now I'll just rename it to `delivered/lak` then I can clean out occasionally with `git branch -D delivered/*`
+At this point I just want to deliver, meaning the I want to push it to a `ready/*`  branch - since that how I've setup the process using the [Pretested Integration Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Pretested+Integration+Plugin){: target="pretest"} in Jenkins. And hopefully I don't have to use this branch ever again, but I still think it's a little premature to just delete it, because if something goes wrong during my automated integration, or if I'm rejected, then I still want easy access to this branch to fix it.  So for now I'll just rename it to `delivered/lak`.
 
 I have an alias called `deliver`for this purpose.
 
@@ -147,6 +147,12 @@ The alias for the `deliver` looks like this:
     [alias]
        deliver = "!BRANCH=`git symbolic-ref --short HEAD`; REMOTEBRANCH=ready/$BRANCH; git push origin $BRANCH:$REMOTEBRANCH
        && git branch -m delivered/$BRANCH"
+
+Occasionally you want to clean out all your delivered branches - the `git branch` command doesn't support wildcards but you can do like this:
+
+    git branch | grep 'delivered/' | xargs git branch -D
+
+###Start new task all over again
 
 When I want to start on a new task I usually want to:
 
