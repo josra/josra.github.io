@@ -152,6 +152,11 @@ Occasionally you want to clean out all your delivered branches - the `git branch
 
     git branch | grep 'delivered/' | xargs git branch -D
 
+And as you guessed, it's also brought to you as an alias:
+
+    [alias]
+      purge-all-delivered = !git co master && git branch | grep 'delivered/' | xargs git branch -D
+
 ###Start new task all over again
 
 When I want to start on a new task I usually want to:
@@ -184,6 +189,7 @@ __[alias]__
     commit-again = !git commit -m\"$(git log --format=%B  HEAD..HEAD@{1})\"
     deliver = "!BRANCH=`git symbolic-ref --short HEAD`;REMOTEBRANCH=ready/$BRANCH; git push origin $BRANCH:$REMOTEBRANCH && git branch -m delivered/$BRANCH"
     new-task = !git fetch origin --prune && git co master && git merge origin/master && git checkout -b
+    purge-all-delivered = !git co master && git branch | grep 'delivered/' | xargs git branch -D
 
 
 Happy hackin'!
