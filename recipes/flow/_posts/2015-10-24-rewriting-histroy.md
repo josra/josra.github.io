@@ -161,7 +161,7 @@ I have create an alias for that which I called `new-task` it takes just one para
 The alias for that looks like this:
 
     [alias]
-      new-taks = !git fetch origin --prune && git co master &&
+      new-task = !git fetch origin --prune && git co master &&
       git merge origin/master && git checkout -b
 
 ...and now I can start hacking again on the new task
@@ -177,7 +177,7 @@ __[alias]__
     tree = log --graph --full-history --all --color --date=short --pretty=format:\"%Cred%x09%h %Creset%ad%Cblue%d %Creset %s %C(bold)(%an)%Creset\"
     commit-again = !git commit -m\"$(git log --format=%B  HEAD..HEAD@{1})\"
     deliver = "!BRANCH=`git symbolic-ref --short HEAD`;REMOTEBRANCH=ready/$BRANCH; git push origin $BRANCH:$REMOTEBRANCH && git branch -m delivered/$BRANCH"
-    new-taks = !git fetch origin --prune && git co master && git merge origin/master && git checkout -b
+    new-task = !git fetch origin --prune && git co master && git merge origin/master && git checkout -b
 
 
 Happy hackin'!
