@@ -8,7 +8,7 @@ __Josra is an alliance that supports the members in feeling safe when they are d
 
 <div class="stdcenter"><img src="/images/josra-logo_2x3.png"/></div>
 
-##Being safe - while being dependent on Open Source
+##Being SAFE - while being dependent on Open Source
 
 Together with our clients we release almost everything we create as Open Source. We have more than 30 Open Source repositories on GitHub, representing technologies ready to share with others and we are the maintainers of more than 10 plugins on Jenkins CI - all Open Source. When companies use Open Source tools in their tool stack they also need to have a strategy on how to actively make sure that the dependency doesn't turn into a vulnerability. The tools need directions and they need maintenance if they are broken. As a Open Source user you can either be an _innovator_ or a _free-rider_. A free-rider will simple sit it out and wait for someone else to fix the problem. An innovator will join the community and fix the issue or add the feature himself.
 
