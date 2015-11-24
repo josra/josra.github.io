@@ -56,24 +56,17 @@ __The 10 Git commitments__
 
 *  All integrations onto an integration branch must pass an automated toll-gate
 
-
 * Only trivial merges are allowed onto the integration branch
-
 
 * Every successful integration onto master kicks off the pipeline
 
-
 * The integration branch is always aiming for the next release
-
 
 * Any push to a centralized repository, that contains a commit on a development branch matching the naming convention triggers an automated integration
 
-*
-Some development branches may be tied to maintenance branches
-
+* Some development branches may be tied to maintenance branches
 
 * All integrations onto promotion branches are automated
-
 
 * Any given promotion branch can only have one contributor
 {: .stdcenter style="background:lightgrey;"}
