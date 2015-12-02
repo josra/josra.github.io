@@ -53,7 +53,7 @@ For each signup or renewal of an annual alliance membership, there will be added
 
 Josra memberships will be renewed, and invoices for the membership fee sent out,  annually on the effective date of the individual member contracts.
 
-Funding can be used for:
+Josra pot is administrated by Praqma and used for:
 
 * Maintenance of existing features in an Open Source project.
 * Development of new features in an Open Source project.
@@ -63,13 +63,13 @@ Funding can be used for:
     * Proof of technology studies.
     * Documentation of Open Source technologies and features.
 
-The ruling concept for approving work within the Josra scope is that the work conducted should add value to the Josra tool stack in general and be relevant to the Josra members.
+The Josra pot is administrated by Praqma and the ruling concept for approving work within the Josra scope is that the work conducted should add value to the Josra tool stack in general and be relevant to the Josra members.
 
-In case of doubt, wether a particular development case is regarded as within the Josra scope or not, the Josra community will be asked for arguments.
+At each Josra gathering the members will agree on a roadmap for the next 6 month, setting the direction for the activities that are not strictly related to maintenance of existing projects.
 
 ### Additional funding and stakeholder groups
 
-Occasionally an alliance member wish to initiate a project or development case, which is to be considered out of the ordinary to me financed from the joint pot. Either because it's too big to fit or because it has limited interest to the Josra members in general.
+Occasionally an alliance member wish to initiate a project or development case, which is to be considered out of the ordinary to be financed from the joint pot. Either because it's too big to fit or because it has limited interest to the Josra members in general.
 
 An alliance member is welcome to add more funding to a specific project to be run in Josra context, Josra related work can be offered at a favorable and discounted price.
 
