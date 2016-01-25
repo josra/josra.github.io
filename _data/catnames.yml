@@ -9,3 +9,7 @@
 - name: Josra Gatherings
   description: A listing of all gatherings in Josra, historical as well as upcoming
   dir: gatherings
+
+- name: Statements of Work
+  description: A listing of all Statement og Works, the equvivalent of briefings or User Stories
+  dir: sow
