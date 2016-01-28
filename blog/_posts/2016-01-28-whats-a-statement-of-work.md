@@ -25,10 +25,15 @@ Anything _new_ will have to have funding, preferably co-funding, from the member
 The SoW's typically stem from the Josra members themselves, it's essentially ideas and visions discussed and elaborated on the Josra gatherings, that are being investigated and the made tangible in SoW's.
 
 ## How to fund Statement of Works
-Each SoW will have a doughnut chart, showing the current commitments, the the funding still needed and the threshold for starting - typically when 90% of the estimate is committed.
+Each SoW will have a doughnut chart, showing the current commitments, the funding still needed and the threshold for starting - typically when 90% of the estimate is committed.
 
-The process works like this:
+The process works much like a KickStarter project:
 
-* If you see a SoW you'd like to commit
-
-<iframe src="https://docs.google.com/forms/d/1bviaOf37nnWBqL4biWFA3-drR8lE9GUUHuo6JeURr_8/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+* If you see a SoW you'd like to contribute to, fill out the [SoW funding form](/sow/) - let us know how much you'd like to contribute.
+* You will receive a quote - you can use that to prepare a Purchase Order internally in your organization if necessary.
+* We will update the doughnut chart on the SoW accordingly.
+* When the "Go!" threshold limit is reached and the project goes live, we will start the work, and at the same time send out invoice matching the quotes.
+* Hopefully the remainder of the funding will tick in - if not we will take it off the pot.
+* We will deliver within budget. If we overrun the estimate, it's our treat.
+* The delivery will become available as open source.
+* The features delivered will be maintained by the Josra pot.
