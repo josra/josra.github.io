@@ -11,9 +11,9 @@ title: Josra Status
 The graph above show some basic stats about how the alliance members get value for their membership fees. You should read the graph as follows:
 
 ###Pot Hours (blue)
-This is the membership fees. Every time a member joins or renews their membership, 40 more hours is added to the Josra pot.
+This is the amount of pot work hours available per month. Essentially it reflects the workload made possible by membership fees plus additional contributions.
 
-_The blue line reflects how many members we are_
+_The blue line reflects the accumulated member commitment_
 
 ###Pot Work (red)
 This is the amount of work actually delivered, related to the pot. So these er the effective hours of real software development leading to actual commits and releases of running software.
@@ -21,14 +21,12 @@ This is the amount of work actually delivered, related to the pot. So these er t
 _The red line shows the activity in the Praqma CoDer sweat shop_
 
 ###Non-pot hours (orange)
-The non-pot work is everything not included in the red graph. That means facilitation, administration, project management, R&D, planning and execution of gatherings.
-
-This kind of work is showed as the non-pot work - it's work that's included in your membership fee, but doesn't directly contribute to an actual release of some piece of running software.
+The non-pot work is everything not included in the red graph. That means facilitation, administration, project management, R&D, planning and execution of gatherings. This kind of work is showed as the non-pot work - it's work that's included in your membership fee, but doesn't directly contribute to an actual release of some piece of running software.
 
 _The orange line shows how much work Praqma throws into the alliance - on top of everything else_
 
 ###Pot balance (green)
-The pot balance is simply the pot hours minus the pot work, both accumulated over the past 12 months. The balance shows if Praqma _under-committing_ (positive numbers) or _over-delivering_ (negative numbers).
+The pot balance is simply the pot hours minus the pot work. The balance shows if Praqma is _under-committing_ (positive numbers) or _over-delivering_ (negative numbers).
 
 _When the green line is below zero the alliance members get more than they paid for_
 
