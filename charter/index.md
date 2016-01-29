@@ -81,7 +81,7 @@ A typical process for executing work within Josra looks like this:
 
 1. Josra members gather frequently in groups, or they interact and communicate through cards and comments on the various [roadmap boards in Trello ](http://www.trello.com/josra).
 1. At some point through the dialog, a development case emerges and it's described as a _Statement of Work_ (SoW) on the Josra web and announced in a posting to the Josra members through the official news mail list.
-1. If any Josra members wish to challenge the SoW, the should do so immediately, as work is initiated as soon as the SoW is releasd.
+1. If any Josra members wish to challenge the SoW, they should do so immediately, as work is initiated as soon as the SoW is releasd.
 1. Praqma will organize, manage and facilitate the process. If a Josra member  throws _additional funding_ in a particular case, that member will become part of the _stakeholder group_ for that particular case.
 1. The _worker_ will stay on the case and maintain a continuous dialog with the _stakeholder group_ to make sure he gets sufficient feed-back and potentially also access to an environment where the nature of the issue can be observed, investigated and developed.  
 1. When the case is resolved, the solution is deliver to the respective Open Source community and the alliance members - as well as anyone else - can pull it from there.
