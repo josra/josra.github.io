@@ -6,7 +6,7 @@ tags:   [Flow, Git, Branching strategy, Jenkins CI]
 ---
 
 
-##Dear Steve!
+## Dear Steve!
 
 **Thanks for you long reply!**
 
@@ -20,7 +20,7 @@ tags:   [Flow, Git, Branching strategy, Jenkins CI]
 
 So let me start all over again:
 
-##Dear Steve
+## Dear Steve
 
 **Thanks for you long reply!**
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Pretested Integration Plugin 
+title:  Pretested Integration Plugin
 author: Lars Kruse
 ---
 
@@ -8,7 +8,7 @@ The blog post is a comprehensive description and guide in the Pretested Integrat
 
 Another interesting source of information could be our paper on the Continuous Delivery Git Flow - using this plugin. Download the paper as `PDF`: [CoDe:U Git Flow - a Continuous Delivery Approach](http://www.praqma.com/resources/papers/git-flow)
 
-###Install
+### Install
 The plugin is Open Source. The code base is available at GitHUb and it's release to the Jenkins CI community. So if you'd like to install it on your own Jenkins master, it's simply business as usual: Go to "Manage Jenkins" on your Jenkins server and search for _pretested integration_.
 
 
@@ -28,13 +28,13 @@ In the section of "Additional behaviours" we check:
 * __Clean after checkout__ in order to make sure that the workspace is guaranteed to not have any _left-overs_ from previous builds hanging around.
 * __Prune stale remote-tracking branches__ to make sure that the branches the pretested integration plugin sees are the same as the one on the `origin`.
 
-###Specifying the branch you want to integrate into
+### Specifying the branch you want to integrate into
 The Pretested Integration plugin is really simple to use, the foot-print in the GUI isn't large either:
 
 <div class="stdcenter" style="width:588px;"><img src="/images/PretestedIntegrationPlugin.png"><br>
 Simply check the plugin to use it. Git is default and so is the master branch as the target. Choose the strategy to use for the integration "squashed" is the default.</div>
 
-###Successfully integrated branches are deleted
+### Successfully integrated branches are deleted
 When the pretested integration plugin has successfully integrated a branch it will delete it even in the `origin` clone
 
 A branch ready to be integrated is like raising a flag, to initiate some action. If that action is successful, then the flag should be lowered again.
@@ -43,12 +43,12 @@ On the other hand; if the integration is not successful and you get a failed bui
 
 You are welcome to fix the issue on the same branch and push it again - the plugin fully supports that.
 
-###Al work is delivered in one chunk
+### Al work is delivered in one chunk
 It's genrally considered good practice, that developers squash their commits into match a delivery of a task or a story. If a developer has solved a bug and the solution is scattered across several commits on his branch, If these commits aren't accumulated one way or the other, then the solution can be more difficult to review simply because it's not packaged and nicely wrapped up.
 
 The Pretested Integration plugin does this for you, simply by only allowing fast-forward merges in the situation where the contribution is actually contained in just one single commit.
 
-In all other events it will either merge using `--no-ff` (no fast forward) and hereby force a new commit with the accumulated changes - This is refered to as _Accumulated commits_ in the GUI. 
+In all other events it will either merge using `--no-ff` (no fast forward) and hereby force a new commit with the accumulated changes - This is refered to as _Accumulated commits_ in the GUI.
 
 But even more elegant, simply use `--squash` and leave all the work on the branch behind. It's like a history-rewrite, that doesn't actually ruin your history.
 This strategy is the _Squashed commits_ radio button in the GUI. It's the default and the  recommended strategy.
@@ -59,7 +59,7 @@ Have a look at this small small sample tree created: Taking off-set in the same 
 
 A brief into to what this command shows; In the top, above the line marked `---`you see the branch heads in the repository - in this case there are three: `dev`, `fix` and `master`.  Below the same line you see the commits listed in chronological order - oldest in the bottom and in the margin, a set of markers for each commit, that indicates which branch the commit belongs to. The beauty of Git is then, that a commit can easily belong to more then one branch. E.g. the `initial` commit was done on `master`, and both `dev` and `fix` branched off from this, so it belong to all three branches.
 
- 
+
 <div class="stdcenter" style="width:550px;"><img src="/images/LabNoFastForward.png"><br>
 <b>Accumulated strategy</b> as you can see, all commits actually belongs to master.</div>
 
@@ -81,7 +81,7 @@ Just to wrap this story about one or the other strategy. We'll just show you the
 
 This is why the Pretested Integration plugin does not give you the opportunity to use plain vanilla merges.
 
-###Why not use the squashed strategy - always?
+### Why not use the squashed strategy - always?
 
 Well, that is actually our recommendation, but it does have a few side effect that you should be aware of:
 
@@ -111,4 +111,3 @@ This peculiarity, does not arise from the Pretested Integration plugin itself, b
 It's pure Git.
 
 If you can learn how to manoeuvre around it - then _Squashed strategy_ is indeed our recommendation. It implements a genuine pristine master and gives you the power of `bisect` which is a powerful feature, once you learn to tame it.
-

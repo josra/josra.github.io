@@ -30,7 +30,7 @@ _Thomas and Sofus will join us at the 3rd Gathering in CPH, and give an inspirat
 
 The ambition is to create and Open Sourced technology (Code name: "Tracey") that overcomes the problem that different stages of the software development process produces various artifacts. These artifacts must be traced - often in quite complex structures. The artifacts derive from different tools which all claim ownership. The Tracey project will create an Open Source platform, that can integrate with tools through plugins and support queries, reporting, trigger automated traces, maintain matrices and audit trails etc.
 
-###Theoretical resources on the topic of traceability:
+### Theoretical resources on the topic of traceability:
 
 * [A survey of traceability in requirements engineering and model-driven development](/res/winkler.pilgrim.2009.pdf){: target="res"} _(Winkler+Pilgrim, 2009)_
 * [An End-To-End Industrial Software Traceability Tool](/res/Asuncion_et_al_2007__e2e_traceability_tool.pdf){: target="res"} _(Asuncion+François+Taylor, 2007)_

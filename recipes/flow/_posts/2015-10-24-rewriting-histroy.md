@@ -8,7 +8,7 @@ __Since the pretested integration commit now supports that well-prepared develop
 
 This recipe will go through the process of rewriting history and reveal a few  git aliases that you can set up to greatly improve efficiency in general.
 
-##The typical use case
+## The typical use case
 
 Imaging that the typical work flow for a developer is similar to this one described here - indented bullets are optional:
 
@@ -50,7 +50,7 @@ I use the Atom editor so I did:
     git config --global core.editor atom
 
 
-###Branch tree from command line
+### Branch tree from command line
 
 I like using git from my command line and I often like to glance at the branch tree to see the context I'm working in.
 
@@ -67,7 +67,7 @@ The tree is made from a pretty-formated output from the `git log` command. The a
 
 (I've added a few newlines and indents above to make it readable, if you copy it to you `.gitconfig` file is _must_ be a one-liner.)
 
-###Squash you local branch before pushing it
+### Squash you local branch before pushing it
 
 Imagine that you have done several commits to your local dev branch and now you're ready to deliver and you want to squash them in to just one single commit - containing all your accumulated changes on the past 3 commits.
 
@@ -118,7 +118,7 @@ My alias for the `commit-again` looks like this:
     [alias]
 	    commit-again = !git commit -m\"$(git log --format=%B  HEAD..HEAD@{1})\"
 
-##Now for the deliver
+## Now for the deliver
 
 At this point I just want to deliver, meaning the I want to push it to a `ready/*`  branch - since that how I've setup the process using the [Pretested Integration Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Pretested+Integration+Plugin){: target="pretest"} in Jenkins. And hopefully I don't have to use this branch ever again, but I still think it's a little premature to just delete it, because if something goes wrong during my automated integration, or if I'm rejected, then I still want easy access to this branch to fix it.  So for now I'll just rename it to `delivered/lak`.
 
@@ -157,7 +157,7 @@ And as you guessed, it's also brought to you as an alias:
     [alias]
       purge-all-delivered = !git co master && git branch | grep 'delivered/' | xargs git branch -D
 
-###Start new task all over again
+### Start new task all over again
 
 When I want to start on a new task I usually want to:
 
