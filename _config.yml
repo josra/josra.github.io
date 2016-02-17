@@ -1,8 +1,7 @@
 name: JOSRA
-highlighter: pygments
+highlighter: rouge
 exclude: [README.md]
 timezone: Europe/Copenhagen
 url: www.josra.org
 markdown: kramdown
 permalink:  none
-
