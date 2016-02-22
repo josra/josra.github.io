@@ -4,10 +4,15 @@ title:  Automated branch Pipelines
 author: Bue Petersen, Lars Kruse
 ---
 
-<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/10iuA_SK6crvYU5TOoqMXxn3plLmuK_3K-bGuqs6kxX0/pubchart?oid=1375284055&amp;format=interactive"></iframe>
+{% highlight shell %}
+Minimum scope:   40 hrs
+Atmel:           40 hrs
+Josra Pot:        0 hrs
+Status:          In progress
+{% endhighlight %}
 
 
-##[Contribute to {{page.title}}](/sow/)
+## [Contribute to {{page.title}}](/sow/)
 
 ### Goal statement
 
