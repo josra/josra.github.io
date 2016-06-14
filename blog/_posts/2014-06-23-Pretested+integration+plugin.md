@@ -6,7 +6,7 @@ author: Lars Kruse
 
 The blog post is a comprehensive description and guide to the Pretested Integration Plugin. It's a supplement to the plugin's [wiki page at Jenkins CI](https://wiki.jenkins-ci.org/display/JENKINS/Pretested+Integration+Plugin).
 
-Another interesting source of information is our paper on the Continuous Delivery Git Flow - using this plugin. Download the paper as `PDF`: [CoDe:U Git Flow - a Continuous Delivery Approach](http://www.praqma.com/resources/papers/git-flow)
+Another interesting source of information is our paper on the Continuous Delivery Git Flow - using this plugin. Download the paper as `PDF`: [CoDe:U Git Flow - a Continuous Delivery Approach](http://was.www.praqma.com/sites/default/files/img/git_flow_web.pdf){: target="_blank"}
 
 ### Install
 The plugin is Open Source. The code base is available at GitHub and it is released to the Jenkins CI community. So if you'd like to install it on your own Jenkins master, it's simply business as usual: Go to "Manage Jenkins" on your Jenkins server and search for _pretested integration_.
