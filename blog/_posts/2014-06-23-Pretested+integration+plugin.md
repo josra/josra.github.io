@@ -1,87 +1,86 @@
 ---
 layout: post
-title:  Pretested Integration Plugin 
+title:  Pretested Integration Plugin
 author: Lars Kruse
 ---
 
-The blog post is a comprehensive description and guide in the Pretested Integration Plugin. It's a supplement to the plugin's [wiki page at Jenkins CI](https://wiki.jenkins-ci.org/display/JENKINS/Pretested+Integration+Plugin).
+The blog post is a comprehensive description and guide to the Pretested Integration Plugin. It's a supplement to the plugin's [wiki page at Jenkins CI](https://wiki.jenkins-ci.org/display/JENKINS/Pretested+Integration+Plugin).
 
-Another interesting source of information could be our paper on the Continuous Delivery Git Flow - using this plugin. Download the paper as `PDF`: [CoDe:U Git Flow - a Continuous Delivery Approach](http://www.praqma.com/resources/papers/git-flow)
+Another interesting source of information is our paper on the Continuous Delivery Git Flow - using this plugin. Download the paper as `PDF`: [CoDe:U Git Flow - a Continuous Delivery Approach](http://was.www.praqma.com/sites/default/files/img/git_flow_web.pdf){: target="_blank"}
 
-###Install
-The plugin is Open Source. The code base is available at GitHUb and it's release to the Jenkins CI community. So if you'd like to install it on your own Jenkins master, it's simply business as usual: Go to "Manage Jenkins" on your Jenkins server and search for _pretested integration_.
+### Install
+The plugin is Open Source. The code base is available at GitHub and it is released to the Jenkins CI community. So if you'd like to install it on your own Jenkins master, it's simply business as usual: Go to "Manage Jenkins" on your Jenkins server and search for _pretested integration_.
 
 
 ### Taking over where the Git SCM plugin left
-The Pretested Integration plugin is collaborating with other plugins. All the features required to establish a workspace for the build are already implemented in the various SCM plugins available.
+The Pretested Integration plugin collaborates with other plugins. All the features required to establish a workspace for the build are already implemented in the various SCM plugins available.
 
-The Pretested Integration Plugin is dependent on Git SCM (or later Mercurial SCM if you prefer) to do it's thing. Hereafter it will take over and wrap the build step: Initially with a merge and afterwards a commit - if the build was successful.
+The Pretested Integration Plugin depends on Git SCM (or Mercurial SCM if you prefer) to do its thing. Hereafter it will take over and wrap the build step: Initially with a merge and afterwards a commit - if the build was successful.
 
 
-The Git SCM plugin shall have it's branch specifier to the expression that you would like the Pretested Integration plugin to integrate. We've come to like the keyword `ready`to indicate this, so we usually set the branch specifier like this:
+The Git SCM plugin shall have its branch specifier set to the expression you would like the Pretested Integration plugin to integrate. We've come to like the keyword `ready` to indicate this, so we usually set the branch specifier like this:
 
 <div class="stdcenter" style="width:560px;"><img src="/images/GitSCMBranchSpecifier.png"><br>
 The branch specifier in Git is set to build anything that comes from <em>origin</em> and matches <em>ready/**</em>.</div>
 
-In the section of "Additional behaviours" we check:
+In the section of "Additional Behaviours" we add:
 
-* __Clean after checkout__ in order to make sure that the workspace is guaranteed to not have any _left-overs_ from previous builds hanging around.
+* __Clean after checkout__ to make sure the workspace does not have any _left-overs_ from previous builds hanging around.
 * __Prune stale remote-tracking branches__ to make sure that the branches the pretested integration plugin sees are the same as the one on the `origin`.
 
-###Specifying the branch you want to integrate into
-The Pretested Integration plugin is really simple to use, the foot-print in the GUI isn't large either:
+### Specifying the branch you want to integrate into
+The Pretested Integration plugin is really simple to use. The footprint in the GUI isn't large either:
 
 <div class="stdcenter" style="width:588px;"><img src="/images/PretestedIntegrationPlugin.png"><br>
-Simply check the plugin to use it. Git is default and so is the master branch as the target. Choose the strategy to use for the integration "squashed" is the default.</div>
+Simply check the plugin to use it. Git is default and so is the master branch as the target. Choose the strategy to use for the integration. Squashed commit is the default.</div>
 
-###Successfully integrated branches are deleted
-When the pretested integration plugin has successfully integrated a branch it will delete it even in the `origin` clone
+### Successfully integrated branches are deleted
+When the pretested integration plugin has successfully integrated a branch it will delete it even in the `origin` clone.
 
-A branch ready to be integrated is like raising a flag, to initiate some action. If that action is successful, then the flag should be lowered again.
+A branch ready to be integrated is like raising a flag to initiate an action. If that action is successful, the flag should be lowered again.
 
-On the other hand; if the integration is not successful and you get a failed build, then it's likely that you would like to go to investigate what happend, so on in that case, everything is left intact for you to scrutinize.
+On the other hand; if the integration is not successful and you get a failed build, then it's likely that you want to investigate what happened. In that case, everything is left intact for you to scrutinize.
 
 You are welcome to fix the issue on the same branch and push it again - the plugin fully supports that.
 
-###Al work is delivered in one chunk
-It's genrally considered good practice, that developers squash their commits into match a delivery of a task or a story. If a developer has solved a bug and the solution is scattered across several commits on his branch, If these commits aren't accumulated one way or the other, then the solution can be more difficult to review simply because it's not packaged and nicely wrapped up.
+### All work is delivered in one chunk
+It's generally considered good practice that developers squash their commits to match the delivery of a task or a story. If a bugfix is scattered across several commits, the solution can be difficult to review, simply because it is not nicely wrapped up. Instead, squashed commits can be used to accumulate related work.
 
-The Pretested Integration plugin does this for you, simply by only allowing fast-forward merges in the situation where the contribution is actually contained in just one single commit.
+The Pretested Integration plugin does this for you, by only allowing fast-forward merges in the situation where the contribution is actually contained in just one single commit.
 
-In all other events it will either merge using `--no-ff` (no fast forward) and hereby force a new commit with the accumulated changes - This is refered to as _Accumulated commits_ in the GUI. 
+In all other events, you have two choices. Either merge using `--no-ff` (no fast forward) and hereby force a new commit with the accumulated changes - This is refered to as _Accumulated commits_ in the GUI.
+Or even more elegant, simply use `--squash` and leave all the work on the branch behind. It's like a history rewrite, that doesn't actually ruin your history.
+This strategy is the _Squashed commits_ radio button in the GUI. It's the default, recommended strategy.
 
-But even more elegant, simply use `--squash` and leave all the work on the branch behind. It's like a history-rewrite, that doesn't actually ruin your history.
-This strategy is the _Squashed commits_ radio button in the GUI. It's the default and the  recommended strategy.
+The difference between the two are subtle, but important, to understand.
 
-The difference between the two are subtle, but important to understand.
+Have a look at this small sample tree created: Taking offset in the same commit on master, someone did two commits on a `dev` branch while someone else did two commits on a `fix` branch. The commits are then integrated using the Accumulated strategy (`--no-ff`). The picture below is then generated by running the `git show-branch --sparse` command.
 
-Have a look at this small small sample tree created: Taking off-set in the same commit on master, someone did two commits on a `dev` branch while someone else did two commits on a `fix` branch. They are then integrated using the Accumulated strategy (`--no-ff`). The picture below is then generated by running the `git show-branch --sparse` command.
+A brief intro to what this command shows: In the top, above the line marked `---`, you see the branch heads in the repository. In this case there are three: `dev`, `fix` and `master`.  Below the same line you see the commits listed in chronological order. The oldest at the bottom and in the margin, a set of markers indicating which branch each commit belongs to. The beauty of Git is then, that a commit can easily belong to more than one branch. E.g. the `initial` commit was done on `master`, and both `dev` and `fix` branched off from this, so it belongs to all three branches.
 
-A brief into to what this command shows; In the top, above the line marked `---`you see the branch heads in the repository - in this case there are three: `dev`, `fix` and `master`.  Below the same line you see the commits listed in chronological order - oldest in the bottom and in the margin, a set of markers for each commit, that indicates which branch the commit belongs to. The beauty of Git is then, that a commit can easily belong to more then one branch. E.g. the `initial` commit was done on `master`, and both `dev` and `fix` branched off from this, so it belong to all three branches.
 
- 
 <div class="stdcenter" style="width:550px;"><img src="/images/LabNoFastForward.png"><br>
 <b>Accumulated strategy</b> as you can see, all commits actually belongs to master.</div>
 
-Imagine that you ran the `bisect` command (never tried it? [read the git manual](http://git-scm.com/book/en/Git-Tools-Debugging-with-Git) - it's awesome!) and you are on the `master` branch and and go from `HEAD` to the commit named `initial`: In this situation your bisect would visit _all_ commits.
+Imagine that you ran the `bisect` command (never tried it? [read the git manual](http://git-scm.com/book/en/Git-Tools-Debugging-with-Git) - it's awesome!) and you are on the `master` branch and go from `HEAD` to the commit named `initial`: In this situation your bisect would visit _all_ commits.
 
-Maybe a little disappointing, since you probably would claim that the stuff you did on `dev` and `fix` are conceptually _delivered_ to `master`and shouldn't necessarily be regarded as _contained_.
+Maybe a little disappointing, since you probably would claim that the stuff you did on `dev` and `fix` are conceptually _delivered_ to `master` and shouldn't necessarily be regarded as _contained_.
 
 OK, now let's have a look at the same situation using the _Squashed strategy_.
 
 <div class="stdcenter" style="width:550px;"><img src="/images/LabSquashed.png"><br>
-<b>Squashed strategy</b> Now, things are starting to look just right, only the deliveries does actually belong to master. Dev and fix branches are detached.</div>
+<b>Squashed strategy</b> Now things are starting to look just right: Only the deliveries actually belonging to master. Dev and fix branches are detached.</div>
 
-In this case, if you ran `bisect` as before - it would only visit the three commits, that you conceptually agree belongs to master. _Neat eh?_
+In this case, if you ran `bisect` as before, it would only visit the three commits that you conceptually agree belongs to master. _Neat eh?_
 
-Just to wrap this story about one or the other strategy. We'll just show you the same situation ones again using just a plain vanilla merge, where fast-forward merges are the default if possible.
+To wrap up the this story about commit strategies, we will show you the same situation once again using just a plain vanilla merge, where fast-forward merges are the default if possible.
 
 <div class="stdcenter" style="width:550px;"><img src="/images/LabPlainvanilla.png"><br>
-<b>Plain Vanilla merges</b> Using fast forward merges may not give you what you want: Where is the commit that delivered dev to master? it's gone! Well it was actually never there: When `dev` was merged into master it was fast-forwarded (because it's the default  when possible), so at that point the the HEAD of `master` is set to the commit named <em>more dev changes</em> and later again it's forwarded again to the the latest on the fix branch. The trace is lost - the big picture becomes pretty blurry.</div>
+<b>Plain Vanilla merges</b> Using fast forward merges may not give you what you want: Where is the commit that delivered dev to master? It's gone! Well, it was actually never there: When `dev` was merged into master it was fast-forwarded (because it's the default when possible), so at that point the HEAD of `master` is set to the commit named <em>more dev changes</em> and later it's forwarded to the latest on the fix branch. The trace is lost - the big picture becomes pretty blurry.</div>
 
-This is why the Pretested Integration plugin does not give you the opportunity to use plain vanilla merges.
+This is why the Pretested Integration plugin does not let you use plain vanilla merges.
 
-###Why not use the squashed strategy - always?
+### Why not use the squashed strategy - always?
 
 Well, that is actually our recommendation, but it does have a few side effect that you should be aware of:
 
@@ -89,9 +88,9 @@ If I push a branch - say it's `dev` and I push it to `ready/dev` like this:
 
     git push origin dev:ready/dev
 
-Meaning that my `dev` becomes `ready/dev` on my target then that would trigger the integration. Perfect.
+Meaning that my `dev` becomes `ready/dev` on my target, then that would trigger the integration. Perfect.
 
-Now if I wanted to continue to use the `dev` branch, maybe do more stuff and deliver it again. Then it would require that I first bring my local `dev` in sync with the remote master - It can be done like this:
+Now, if I wanted to continue using the `dev` branch, maybe do more stuff and deliver it again, then it would require that I first bring my local `dev` in sync with the remote master - It can be done like this:
 
     git checkout master
     git fetch origin --prune
@@ -99,16 +98,15 @@ Now if I wanted to continue to use the `dev` branch, maybe do more stuff and del
     git checkout dev
     git merge master -m "restablishing the relationship"
 
-The thing is that since the merged was done using `--squash` the `dev` branch in internally recorded as now currently being delivered anywhere - if you wanted to delete the branch - you would be required to use force:
+The thing is that since the merge was done using `--squash`, the `dev` branch in internally recorded as not currently being delivered anywhere. If you wanted to delete the branch, you would be required to use force:
 
     git branch -d dev  # this would fail
     git branch -D dev  # while this would work
 
-Not the behaviour that you would normally expect from a branch that is - at least _conceptually_ - already delivered.
+Not the behaviour you would normally expect from a branch that is - at least _conceptually_ - already delivered.
 
-This peculiarity, does not arise from the Pretested Integration plugin itself, but from the `--squash` merge. As you saw using no strategy or even the _Accumulated strategy_ both have other side effects that are also undesired, and non of these are neither related to the Pretested Integration plugin.
+This peculiarity does not arise from the Pretested Integration plugin itself, but from the `--squash` merge. As you saw, using no strategy or even the _Accumulated strategy_ both have other side effects that are also undesired, and none of these are neither related to the Pretested Integration plugin.
 
 It's pure Git.
 
-If you can learn how to manoeuvre around it - then _Squashed strategy_ is indeed our recommendation. It implements a genuine pristine master and gives you the power of `bisect` which is a powerful feature, once you learn to tame it.
-
+If you can learn how to manoeuvre around it, the _Squashed strategy_ is indeed our recommendation. It implements a genuine pristine master and gives you the power of `bisect`, which is a powerful feature once you learn to tame it.

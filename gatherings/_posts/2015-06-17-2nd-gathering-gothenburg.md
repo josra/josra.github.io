@@ -9,7 +9,7 @@ on the topic:<br/>
 Migration from bespoke SCM to Git<br/>
 Joint solution for Josra members_{: .subtitle}
 
-##Venue:
+## Venue:
 
 __Volvo Truck corporation__<br/>
 Entrance through the B-Gate<br/>
@@ -17,7 +17,7 @@ Street address is [Gropegårdsgatan](https://www.google.se/maps/search/gropeg%C3
 
 _The meeting is limited to 14 persons._
 
-##Gathering
+## Gathering
 __The members of the Joint Open Source Roadmap Alliance who are working in bespoke IBM SCM systems (ClearCase, CM Synergy) gathers to explore common ground for collaboration when migrating or bridging to Git__
 
 On initiative from Grundfos and Volvo, Praqma is facilitating a full day workshop and unconference in which we will try to establish common ground for a joint effort in developing tools, support and techniques for migrating from centralized SCM systems to Distributed VCS systems such as Git.

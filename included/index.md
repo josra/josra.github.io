@@ -9,7 +9,7 @@ The membership fee per corporation is initially set to __7,000 EUR__ per year.
 
 As listed in the [included](/included/) section, the membership - among other benefits - entitles you to up to 40 hours of support or development per year - only requirement is that the work is contributing to the tools in JOSRA's tools stack.
 
-###Early adaptors are rewarded!
+### Early adaptors are rewarded!
 
 _The 7K€/Y:) is a discounted rate that we will guarantee the first 20 members who join the alliance._
 
@@ -29,7 +29,7 @@ Up to two named persons in each corporation, will be set as contact and will be 
 
 Any person representing a member corporation can request membership to the JOSRA trello Organization and gain access to the [roadmap boards](www.trello.com/josra) as well as request membership of the [JOSRA group on LinkedIn](https://www.linkedin.com/groups/Joint-Open-Source-Roadmap-Alliance-7403229).
 
-##More meet-ups - more benefits
+## More meet-ups - more benefits
 
 Praqma is passionate about facilitating knowledge sharing and organizing meet-ups. We are hosting and coordinate the Jenkins CI community events in Northern Europe, both the conference held at the University of Copenhagen and the Jenkins CI code camp. We run the Continuous Delivery user group [CoDe:U](http://www.codeu.eu/) which gathers several times every year and in October 2014 we will host and coordinate a large Continuous Delivery Conference at Hotel Marriot in the heart of Copenhagen.
 

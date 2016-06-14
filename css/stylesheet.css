@@ -162,6 +162,7 @@ ul, ol, dl {
 
 /* COMMON STYLES */
 
+/*
 hr {
   height: 1px;
   line-height: 1px;
@@ -170,6 +171,7 @@ hr {
   border: none;
   background: transparent url('../images/hr.png') 0 0 no-repeat;
 }
+*/
 
 table {
   width: 100%;
@@ -363,6 +365,7 @@ dl dd {
   font-weight: 100;
 }
 
+/*
 footer {
   background: transparent url('../images/hr.png') 0 0 no-repeat;
   margin-top: 40px;
@@ -371,6 +374,7 @@ footer {
   font-size: 13px;
   color: #aaa;
 }
+*/
 
 footer a {
   color: #666;

@@ -7,7 +7,7 @@ author: Lars Kruse
 _Copenhagen, October 8th 2015<br/>
 In Conjunction with the CoDeCPH Conference_{: .subtitle}
 
-##Venue:
+## Venue:
 
 __Praqma Copenhagen Office__<br/>
 Entrance through the back yard<br/>
@@ -16,7 +16,7 @@ Street address is [Borgergade 24B, 1300 CPH K](https://goo.gl/maps/8NlfD){: targ
 
 _The meeting is free of charge, but limited to Josra members - registration is required._
 
-##Gathering
+## Gathering
 __The members of the Joint Open Source Roadmap Alliance are meeting for the 3rd time to conspire about the joint roadmap of the various projects that we have going__
 
 __Every member is encouraged to send two representatives to the gathering__
