@@ -5,7 +5,7 @@ title: Sponsors
 Scruitineze the statistics of "[Josra By Numbers](/members/numbers.html)"
 
 [__Praqma__<br/>_The Continuous Delivery Company_ Driving the initiative behind the alliance and delivering the sweat, management and infrastructure that enables Josra.](http://www.praqma.com){: .sponsorbox  .gold #praqma target="member"}
-[__Yxlon International__<br/>The leading supplier of industrial X-ray and Computed Tomography systems for non-destructive material testing.](http://www.yxlon.com){: target="member" .sponsorbox .gold #yxlon }
+[__Yxlon International__<br/>The leading supplier of industrial X-ray and Computed Tomography systems for non-destructive material testing.](http://www.yxlon.com/Home){: target="member" .sponsorbox .gold #yxlon }
 [__Grundfos__<br/>Full range supplier of pumps for heating, air conditioning, irrigation, industry, groundwater, boosting and water.](http://www.grundfos.com){: .sponsorbox .gold #grundfos target="member"}
 [__Atmel__<br/>Worldwide leader in the design and manufacture of microcontrollers.](http://www.atmel.com){: .sponsorbox .gold #atmel target="member"}
 [__Novelda__<br/>Specializing in nanoscale wireless low-power technology for ultra-high resolution impulse radar.](http://xethru.com){: .sponsorbox .gold #novelda target="member"}

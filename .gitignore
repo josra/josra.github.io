@@ -1,3 +1,10 @@
 _site/
 .DS_Store
 .sass-cache/
+.linkchecker
+**/*.*~
+**/*~
+**/*.log
+linkchecker.report.csv
+linkchecker.report.html
+
