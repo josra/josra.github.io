@@ -83,7 +83,7 @@ A typical process for executing work within Josra looks like this:
 1. At some point through the dialog, a development case emerges and it's described as a _Statement of Work_ (SoW) on the Josra web and announced in a posting to the Josra members through the official news mail list.
 1. If any Josra members wish to challenge the SoW, they should do so immediately, as work is initiated as soon as the SoW is releasd.
 1. Praqma will organize, manage and facilitate the process. If a Josra member  throws _additional funding_ in a particular case, that member will become part of the _stakeholder group_ for that particular case.
-1. The _worker_ will stay on the case and maintain a continuous dialog with the _stakeholder group_ to make sure he gets sufficient feed-back and potentially also access to an environment where the nature of the issue can be observed, investigated and developed.  
+1. The _worker_ will stay on the case and maintain a continuous dialog with the _stakeholder group_ to make sure he gets sufficient feed-back and potentially also access to an environment where the nature of the issue can be observed, investigated and developed.
 1. When the case is resolved, the solution is deliver to the respective Open Source community and the alliance members - as well as anyone else - can pull it from there.
 1. The feature is guaranteed support and maintenance in at least 12 month after it's delivery.
 
@@ -135,7 +135,7 @@ The gatherings - general as well as specialized - are _decision meetings_. Membe
 
 Roadmaps are maintained individually for each tool in the Josra tool stack.
 
-Roadmaps are organized as Trello boards in Josra's organization on [www.trello.com/josra](http://www.trello.com/josra).
+Roadmaps are organized as [Trello boards in Josra's organization](http://www.trello.com/josra).
 
 ## Collaboration platforms
 
@@ -151,16 +151,16 @@ The alliance activities and collaboration platform are maintained through:
 
 ### Social
 
-* Twitter account [@josraorg](http://www.twitter.org/josraorg)
-* Twitter hashtag [#josra](ttps://twitter.com/hashtag/josra?src=hash)
+* Twitter account [@josraorg](https://twitter.com/josraorg)
+* Twitter hashtag [#josra](https://twitter.com/hashtag/josra?src=hash)
 
 ## Josra case management
 
-All issues are initiated through the various roadmaps, maintained through Trello Boards at: [www.trello.com/josra](http://www.trello.com/josra)
+All issues are initiated through the various roadmaps, maintained through the [Josra Trello Board](http://www.trello.com/josra)
 
 When an issues is raised to development case, a ticket is also created in the case management system designated or preferred by the corresponding Open Source community.
 
-E.g for Jenkins CI plugins that system is [issues.jenkins-ci.org](https://issues.jenkins-ci.org), if no recommended or de facto system exists for a particular product, we will use the features provided by GitHub.
+E.g for Jenkins CI plugins that system is [https://issues.jenkins-ci.org](https://issues.jenkins-ci.org), if no recommended or de facto system exists for a particular product, we will use the features provided by GitHub.
 
 If no naturally designated case management system exist for a given case. Praqma's incident management system will be used - cases can be opened simply by mailing them to [support@praqma.net](mailto:support@praqma.net).
 

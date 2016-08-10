@@ -146,13 +146,13 @@ The start the Jekyll web service - which will automatically build the HTML - and
 
 ### Test your setup by running:
 
-    git clone https://github.com/CoDe-U/CoDe-U.github.io.git
-    cd cd CoDe-U.github.io/
+    git clone https://github.com/Praqma/praqma.com.git
+    cd praqma.com
     jekyll serve
 
-Open your browser on [http://localhost:4000](http://localhost:4000) and you should see the Code:U webpage.
+Open your browser on [http://localhost:4000](http://localhost:4000) and you should see the praqma.com webpage.
 
-...which you can also see at [www.codeu.eu](http://www.codeu.eu)
+...which you can also see at [http://www.praqma.com/](http://www.praqma.com/)
 
 Every time you have change the content of the files in directory you'll have to build the HTML again simply by running:
 
