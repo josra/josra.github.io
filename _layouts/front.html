@@ -3,20 +3,16 @@
 
   {%include head.html%}
 
-  <body>
-
+  <body class="container">
     {%include banner.html%}
+    <div class="row">
+      <div class="col-md-3" style="padding-left:0;">
+          {%include twitter-sidebar.html%}
+      </div>
+      <div class="col-md-9">
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-        
-          {{ content }}
-        
-        </section>
+        {{ content }}
 
-        {%include twitter-sidebar.html%}
-        
       </div>
     </div>
   </body>
