@@ -4,23 +4,16 @@
   {%include head.html%}
 
   <body>
-
+  <div id="main_container">
     {%include banner.html%}
-
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content"> 
-        
+      <div class="row">
+        <div class="side_container">
+          {%include lsbycat.html%}
+        </div>
+        <div class="content_container">
           <h1>{{page.title}}</h1>
-          
           {{ content }}
-        
-        </section>
-
-          <aside id="sidebar">
-            {%include lsbycat.html%}
-          </aside>
-        
+        </div>
       </div>
     </div>
   </body>

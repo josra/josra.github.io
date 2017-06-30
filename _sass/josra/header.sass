@@ -1,6 +1,6 @@
+@import "../bower_components/bootstrap-sass-3.3.7/assets/stylesheets/_bootstrap.scss"
+
 header
-  padding-top: 40px
-  padding-bottom: 40px
   font-family: 'Skranji', 'Helvetica Neue', Helvetica, Arial, serif
   background: #2e7bcf url(../images/josra.00adef.png) 0 0 repeat-x
   border-bottom: solid 1px #275da1
@@ -21,18 +21,26 @@ header
     width: 540px
     letter-spacing: 0
 
-  .menu
-    float: left
-    margin-left: 5px
-    margin-top: 5px
-    padding-top: 0px
-    width: 87px
-    color: #fff
-    height: 21px
-    background-color: #fe950d
-    text-align: center
-    border-radius: 10px
-    font-size: 14px
+  .logoBox
+    @extend .col-md-3
+    background: #313131
+    height: 90px
+    img
+      @extend .img-responsive
+  .menuWrapper
+    @extend .col-md-9
+    .menu
+      float: left
+      margin-left: 5px
+      margin-top: 60px
+      padding-top: 0px
+      width: 87px
+      color: #fff
+      height: 21px
+      background-color: #fe950d
+      text-align: center
+      border-radius: 10px
+      font-size: 14px
 
   a.menu
     color: #fff

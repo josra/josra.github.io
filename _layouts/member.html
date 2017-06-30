@@ -1,29 +1,21 @@
 <!DOCTYPE html>
 <html>
-
-{%include head.html%}
-<link rel="stylesheet" type="text/css" href="/css/sponsors.css" media="screen">
-
-<body>
-
-  {%include banner.html%}
-
-  <div id="content-wrapper">
-    <div class="inner clearfix">
-      <section id="main-content">
-
-        {{ content }}
-
-      </section>
-
-      <aside id="sidebar">
-        <a target="_blank" href="/res/Josra-member.pdf">
-          <img style="width:200px;" src="/images/josra1.png">
-          <img style="width:200px;" src="/images/josra2.png">
-        </a>
-
-      </aside </div>
+  {%include head.html%}
+  <link rel="stylesheet" type="text/css" href="/css/sponsors.css" media="screen">
+  <body>
+    <div id="main_container">
+      {%include banner.html%}
+      <div class="row">
+        <div class="side_container">
+          <a target="_blank" href="/res/Josra-member.pdf">
+            <img style="width:200px;" src="/images/josra1.png">
+            <img style="width:200px;" src="/images/josra2.png">
+          </a>
+        </div>
+        <div class="content_container">
+          {{ content }}
+        </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
