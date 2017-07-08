@@ -1,22 +1,16 @@
 <!DOCTYPE html>
 <html>
-
   {%include head.html%}
-
   <body>
-
-    {%include banner.html%}
-
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-
+    <div id="main_container">
+      {%include banner.html%}
+      <div class="row">
+        <div class="side_container">
+            {%include twitter-sidebar.html%}
+        </div>
+        <div class="content_container">
           {{ content }}
-
-        </section>
-
-        {%include twitter-sidebar.html%}
-
+        </div>
       </div>
     </div>
   </body>

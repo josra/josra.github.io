@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html>
-
   {%include head.html%}
-
   <body>
-
+    <div id="main_container">
     {%include banner.html%}
-
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-        
-          <strong>Category</strong> 
+      <div class="row">
+        <div class="side_container">
+            {%include lsbycat.html%}
+        </div>
+        <div class="content_container">
+          <strong>Category</strong>
             {% for catname in site.data.catnames %}
               {% for category in page.categories %}
                 {% if catname.dir == category %}
@@ -20,23 +18,14 @@
               {% endfor %}
             {% endfor %}<br/>
           <strong>By:&nbsp;</strong>{% for author in page.author %}
-            <em>{{author}}</em>&nbsp;&nbsp;
+          <em>{{author}}</em>&nbsp;&nbsp;
           {% endfor %}<br/>
-          <strong> On:</strong>          
+          <strong> On:</strong>
           {{page.date | date: "%A, %B %d. %Y"}}<br/>
-        
           <h1>{{page.title}}</h1>
-        
           {{ content }}
-          
-        
-        </section>
-          <aside id="sidebar">
-            {%include lsbycat.html%}
-          </aside>
-  
-        {%include google-comments.html%}
-        
+          {%include google-comments.html%}
+        </div>
       </div>
     </div>
   </body>
