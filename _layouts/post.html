@@ -6,7 +6,8 @@
     {%include banner.html%}
       <div class="row">
         <div class="side_container">
-            {%include lsbycat.html%}
+          {% include lssinglecat.html cat='blog' %}
+          {% include lssinglecat.html cat='flow' %}
         </div>
         <div class="content_container">
           <strong>Category</strong>

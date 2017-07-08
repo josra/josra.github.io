@@ -309,7 +309,7 @@ If the integration is successful the [Pretested Integration Plugin][pretested-in
 
 If I synchronize my `multiple-scm` branch with the commit that was added to `master` I can even continue to use my `multiple-scm` branch for more deliveries.
 
-I will show how to do this in the [CoDe:U Git Flow Cookbook]({% post_url 2014-10-02-codeu-git-flow-cookbook %}).
+I will show how to do this in the [CoDe:U Git Flow Cookbook]({% post_url /blog/2014-10-02-codeu-git-flow-cookbook %}).
 
 #### Some development branches may be tied to maintenance branches rather than the integration branch
 
@@ -335,7 +335,7 @@ This completes the picture.
 
 We're compiling a lot of very practical _how do I..._ information in relation to this flow. It's our ambition that it should be the one compendium you need in order to work efficiently with this flow.
 
-Go there: [CoDe:U Git Flow Cookbook]({% post_url 2014-10-02-codeu-git-flow-cookbook %})
+Go there: [CoDe:U Git Flow Cookbook]({% post_url blog/2014-10-02-codeu-git-flow-cookbook %})
 
 __Please throw us some comments!!!__
 

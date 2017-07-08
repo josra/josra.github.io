@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: sow
 title:  Automated branch Pipelines
 author: Bue Petersen, Lars Kruse
 ---
