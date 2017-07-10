@@ -1,3 +1,3 @@
 # HOWTO: Add spaced sections of '--ignore-url=<url>' ala '--ignore-url=<url-1> --ignore-url=<url-2>' in a _single line_
 
---ignore-url=http://localhost:4000 --ignore-url=http://www.agilemanifesto.org/principles.html --ignore-url=http://nvie.com/posts/a-successful-git-branching-model* --ignore-url=https://www.linkedin.com/in/sofusalbertsen --ignore-url=../fonts/bootstrap* --ignore-url=mailto:*
+--ignore-url=http://rubyinstaller.org/downloads --ignore-url=http://localhost:4000 --ignore-url=http://www.agilemanifesto.org/principles.html --ignore-url=http://nvie.com/posts/a-successful-git-branching-model* --ignore-url=https://www.linkedin.com/in/sofusalbertsen --ignore-url=../fonts/bootstrap* --ignore-url=mailto:*

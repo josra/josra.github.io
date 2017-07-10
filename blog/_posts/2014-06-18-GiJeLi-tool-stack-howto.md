@@ -9,7 +9,7 @@ __Jekyll is a Ruby gem that renders [MarkDown](https://help.github.com/articles/
 
 GiJeLi is a word made up as a contraction of `Gi`t, `Je`kyll and `Li`quid
 
-This post is a description on how to get the tool-stack up and running on your local machine. It's intentionally kept short. For more lecture on the subject you can visit [Jekyll home](http://jekyllrb.com/) or read the into at [Jekyllbootstrap](http://jekyllbootstrap.com/lessons/jekyll-introduction.html).
+This post is a description on how to get the tool-stack up and running on your local machine. It's intentionally kept short. For more lecture on the subject you can visit [Jekyll home](http://jekyllrb.com/).
 
 Provided that you already have git up and running what you need to do is then:
 
@@ -28,7 +28,7 @@ See [Jekyll on Windows](http://jekyllrb.com/docs/windows/#installation) for more
 
 
 ### Install Ruby with dev-kit
-Windows users must install Ruby, if it is not installed already. Unlike Mac OS X, Ruby is not installed by default with the operating system, so most users will have to perform the following steps. Ruby can be easily installed with RubyInstaller. Download and run the latest version of the installer listed on the [RubyInstaller](http://rubyinstaller.org/downloads/) website. 
+Windows users must install Ruby, if it is not installed already. Unlike Mac OS X, Ruby is not installed by default with the operating system, so most users will have to perform the following steps. Ruby can be easily installed with RubyInstaller. Download and run the latest version of the installer listed on the [RubyInstaller](http://rubyinstaller.org/downloads/) website.
 
 You will also need to install the latest DevKit, which is also available on the [RubyInstaller downloads page](http://rubyinstaller.org/downloads/).
 
@@ -38,10 +38,10 @@ Once you’ve extracted the DevKit package (i.e. to directory _c:\\rubydevkit_),
     ruby dk.rb install
 
 ### Install Jekyll
-Finally, install the Jekyll RubyGem with 
+Finally, install the Jekyll RubyGem with
 
     gem install jekyll.
-    
+
 If you are behind a proxy, add the option `--http-proxy <porxy-url>` after the install command.
 
 To be able to run _jekyll_ you need to change codepage (to UTF-8) in the command window you are running _jekyll_ from. See [Jekyll Encoding](http://jekyllrb.com/docs/windows/#encoding). In your CLI window, do the command:
@@ -64,10 +64,10 @@ The following Gemsn need to be installed (as of time of writing this):
 
 Install with the command:
 
-    gem install commander nokogori kramdown json 
- 
+    gem install commander nokogori kramdown json
+
 ### Install python
-Get python installer from [the Python Website](http://www.pyton.org).
+Get python installer from [the Python Website](http://www.python.org).
 
 Run the installer and then add the python folder to the PATH in windows.
 
@@ -84,13 +84,13 @@ Run the following commands:
     rvm install ruby
     rvm use ruby --default
     gem install jekyll    
-    
+
 
 ### On Fedora (20)
     sudo yum install ruby ruby-devel
     gem install jekyll
-    
-    
+
+
 ### On Centos 6
 
 Pre-Install stuff
@@ -118,7 +118,7 @@ Install http & json dependency
 
     sudo gem install http
     sudo gem install json
-    
+
 ## Setting up Ruby and Jekyll on a Mac OS
 
 ```
@@ -157,18 +157,16 @@ Open your browser on [http://localhost:4000](http://localhost:4000) and you shou
 Every time you have change the content of the files in directory you'll have to build the HTML again simply by running:
 
     jekyll build
-   
+
 A neat trick it to start the jekyll web service with the `--watch` this will make the service monitor any file changes in the directory and automatically rebuild when required.
 
 Consult the Jekyll documentation for more [tweaks](http://jekyllrb.com/docs/usage/).
 
-## Setting up a web server running GiJeli 
+## Setting up a web server running GiJeli
 
 Clone the git repo, cd into it and run the command `jekyll serve`. Now setup a cron job or a Jenkins CI job that periodically runs:
 
     git pull
     jekyll build
-   
-...Hmmm - that's it!
- 
 
+...Hmmm - that's it!
