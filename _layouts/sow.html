@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+  {%include head.html%}
+
+  <body>
+    <div id="main_container">
+    {%include banner.html%}
+      <div class="row">
+        <div class="side_container">
+          {% include lssinglecat.html cat='sow' %}
+        </div>
+        <div class="content_container">
+          <div class="title">{{page.title}}</div>
+            {{ content }}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
