@@ -3,7 +3,6 @@
 header
   font-family: 'Skranji', 'Helvetica Neue', Helvetica, Arial, serif
   background: #2e7bcf url(../images/josra.00adef.png) 0 0 repeat-x
-  border-bottom: solid 1px #275da1
 
   h1
     letter-spacing: -1px
@@ -22,93 +21,41 @@ header
     letter-spacing: 0
 
   .logoBox
-    @extend .col-md-3
+    @extend .col-xs-6
+    @extend .col-sm-3
     background: #313131
-    height: 90px
+    height: 80px
     img
       @extend .img-responsive
   .menuWrapper
-    @extend .col-md-9
+    @extend .col-xs-6
+    @extend .col-sm-9
+    text-align: -webkit-center
+    @media screen and (max-width: 700px)
+      z-index: 99999
+      max-height: 10000px
+      position: absolute !important
+      top: 11%
+      right: 0px
+      background: #2e7bcf url(../images/josra.00adef.png) 0 0 repeat-x
     .menu
+      @extend .col-sm-2
+      @extend .col-xs-12
       float: left
-      margin-left: 5px
-      margin-top: 60px
-      padding-top: 0px
-      width: 87px
       color: #fff
       height: 21px
-      background-color: #fe950d
-      text-align: center
-      border-radius: 10px
       font-size: 14px
-
+      padding-top: 59px
+      @media screen and (max-width: 700px)
+        padding-top: 0px
   a.menu
-    color: #fff
+    color: orange
 
   a.menu:hover
-    color: #fff
+    color: orange
 
   a.button
     position: absolute
     right: 0
     top: 0
     background: transparent url(../images/github-button.png) 0 0 no-repeat
-
-
-/* Tablet Portrait size to standard 960 (devices and browsers) */
-@media only screen and (min-width: 768px) and (max-width: 959px)
-  header
-    h1, h2
-      width: 340px
-
-    h1
-      font-size: 47px
-
-    h2
-      font-size: 30px
-
-/* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px)
-
-  header
-    padding: 20px 0
-
-    .inner
-      position: relative
-
-    h1, h2
-      width: 100%
-
-    h1
-      font-size: 48px
-
-    h2
-      font-size: 24px
-
-    a.button
-      background-image: none
-      height: auto
-      display: inline-block
-      margin-top: 15px
-      padding: 5px 5px
-      font-size: 13px
-      line-height: 1
-      background-color: #fff
-      color: #2879d0
-      -moz-border-radius: 5px
-      -webkit-border-radius: 5px
-      border-radius: 5px
-      visibility: hidden
-
-      small
-        font-size: 13px
-        display: inline
-
-    a.menu
-      height: auto
-      display: inline-block
-      position: relative
-      margin-top: 15px
-      padding: 5px 0px
-      line-height: 1
-      float: none

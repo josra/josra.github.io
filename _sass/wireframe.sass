@@ -9,10 +9,16 @@
     padding: 15px 15px 15px 15px
     background: lightgrey
     @extend .col-md-3
+    @extend .col-sm-3
     @extend .hidden-xs
     @extend .pull-left
 
   .content_container
     @extend .col-md-9
+    @extend .col-sm-9
     @extend .col-xs-12
     @extend .pull-right
+
+  .twitter_padding
+    @media only screen and (max-width: 992px)
+      padding: 15px 0px 0px 0px
