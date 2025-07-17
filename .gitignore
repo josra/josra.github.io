@@ -7,4 +7,4 @@ _site/
 **/*.log
 linkchecker.report.csv
 linkchecker.report.html
-
+**cache*

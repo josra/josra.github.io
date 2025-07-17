@@ -5,3 +5,12 @@ timezone: Europe/Copenhagen
 url: www.josra.org
 markdown: kramdown
 permalink:  none
+
+exclude:
+  - LICENSE
+  - CONTRIBUTING.md
+  - README.md
+  - Gemfile*
+  - /docs
+  
+

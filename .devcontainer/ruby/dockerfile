@@ -1,0 +1,26 @@
+
+FROM ruby:3.3.0-bookworm
+
+LABEL author="Lakruzz <lars@lakruzz.com>"
+LABEL maintainer="Lakruzz <lars@lakruzz.com>"
+
+WORKDIR /app
+EXPOSE 4000
+
+# Liquid must run in UTF-8 env to support BOM characters
+RUN apt-get update && \
+    apt-get install -y locales && \
+    echo "en_US UTF-8" > /etc/locale.gen && \
+    locale-gen en_US UTF-8
+
+ENV LANG=en_US.UTF-8
+ENV LANGUAGE=en_US:en
+ENV LC_CTYPE=en_US.UTF-8
+ENV LC_ALL=en_US.UTF-8
+
+# Install Node.js and npm for cspell and other npm packages
+RUN curl -fsSL https://deb.nodesource.com/setup_lts.x | bash - && \
+    apt-get install -y nodejs
+
+# Clean up apt cache to reduce image size
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
